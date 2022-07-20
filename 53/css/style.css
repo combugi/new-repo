@@ -1,0 +1,100 @@
+.dummy {
+ 
+  width: 5000px;
+  height: 5000px;
+}
+
+div:not(.dummy) {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  transition: all 1s;
+}
+
+
+.lt {
+  background: red;
+  left: 0;
+  top: 0;
+  color: aliceblue;
+  font-size: 1.2em;
+}
+.rt {
+  
+
+  background: red;
+  left: 100%;
+  top: 0;
+  color: aliceblue;
+  font-size: 1.2em;
+  transform:translateX(-100%);
+}
+.ct {
+  
+  
+  background: red;
+  left: 50%;
+  top: 0;
+  color: aliceblue;
+  font-size: 1.2em;
+  transform:translateX(-50%);
+ 
+}
+.lc {
+  
+  
+  background: red;
+  left: 0;
+  top: 50%;
+  color: aliceblue;
+  font-size: 1.2em;
+  transform: translateY(-50%);
+}
+.rc {
+  
+  
+  background: red;
+  left: 100%;
+  top: 50%;
+  color: aliceblue;
+  font-size: 1.2em;
+  transform:  translateX(-100%) translateY(-50%);
+}
+.cc {
+  background: red;
+  left: 50%;
+  top: 50%;
+  color: aliceblue;
+  font-size: 1.2em;
+  transform: translateX(-50%) translateY(-50%);
+}
+.lb {
+  
+  
+  background: red;
+  left: 0;
+  top: 100%;
+  color: aliceblue;
+  font-size: 1.2em;
+  transform: translateY(-100%);
+}
+.rb {
+  
+  
+  background: red;
+  left: 100%;
+  top: 100%;
+  color: aliceblue;
+  font-size: 1.2em;
+  transform:translateX(-100%) translateY(-100%);
+}
+.cb {
+  
+  
+  background: red;
+  left: 50%;
+  top: 100%;
+  color: aliceblue;
+  font-size: 1.2em;
+  transform:translateX(-50%) translateY(-100%);
+}

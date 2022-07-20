@@ -1,0 +1,6 @@
+js)스크롤 모션
+
+1)floating banner,scroll 이벤트 resize이벤트 scrollTop()
+2)offset()
+3)scroll spy() scroll To()...바닐라 스크립트(?) 
+4)sticky

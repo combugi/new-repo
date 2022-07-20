@@ -1,0 +1,63 @@
+.container1{
+  width: 70%;
+  margin: 30px auto;
+  border:  5px solid saddlebrown;
+}
+.container1 div{
+  position: sticky;
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+
+
+
+
+
+
+
+
+h1,h2,p{
+  
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+h1{
+ 
+  background: #000;
+  height: 60px;
+  line-height: 60px;
+  color: #eee;
+}
+h2{
+  
+  height: 50px;
+  background: #555;
+  line-height: 50px;
+  color: #eee;
+}
+.container2 header{
+ position: sticky;
+ top:0;
+ z-index: 1;
+}
+.container2 h2{
+  position: sticky;
+  top:50px
+}
+
+.container3{
+  width: 80%;
+  border: 1px solid black;
+  margin: 30px auto;
+}
+.sidebar{
+  position: sticky;
+  width: 20%;
+  top: 0;
+}
+.content{
+  right: 0;
+}

@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+
+.box {
+
+  width: 100px;
+  height: 100px;
+
+}
+
+.line {
+  position: fixed;
+  width: 100%;
+  left: 0;
+}
+
+.line1 {
+  border-top: 2px solid red;
+  top: 10%;
+}
+
+.line2 {
+  border-top: 2px solid red;
+  top: 30%;
+}
+
+.line3 {
+  border-top: 2px solid blue;
+  top: 70%;
+}
+
+.line4 {
+  border-top: 2px solid blue;
+  top: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.box1 {
+  padding: 20px;
+
+  background: gainsboro;
+}
+
+.box1.active {
+  background: red;
+}
+.box1.active2 {
+  background: blue;
+}
