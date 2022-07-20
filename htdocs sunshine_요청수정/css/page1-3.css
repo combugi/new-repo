@@ -1,0 +1,30 @@
+section.page1-3-section1 p{
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+section.page1-3-section1 .youtoube-container{
+  position: relative;
+  margin:0px auto;
+  width: 100%;
+  max-width: 800px;
+ /* 높이를 넓이만큼 주고 싶을때
+ 넓이와 같은 높이를 가진 자식을 끼워 놓는다 */
+  
+  background: 1px solid black;
+ 
+}
+section.page1-3-section1 .youtoube-container::before{
+  display: block;
+  content: "";
+ background: red;
+  padding-top: 56.25% /* 315 /560 *100 */
+}
+
+section.page1-3-section1 .youtoube-container iframe{
+  position: absolute;
+ width: 100%;
+ height: 100%;
+ top:0;
+ left: 0;
+}

@@ -1,0 +1,75 @@
+.page1-2-section1 dl{
+  margin-bottom: 30px;
+  padding: 15px;
+  border-radius: 5px;
+  border:1px solid #CCC;
+  background: #EEE;
+}
+.page1-2-section1 dl > *{
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 5px 0;
+}
+.page1-2-section1 dl dt{
+  font-weight: 600;
+  text-align: center;
+
+  border-radius: 10px;
+  background: #000;
+  color:#FFF;
+}
+
+@media screen and (min-width:600px){
+  .page1-2-section1 dl{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .page1-2-section1 dt{
+    width: 20%;
+  }
+  .page1-2-section1 dd{
+    width: 75%;
+  }
+}
+
+
+/* ------------------------------------------------------ */
+.page1-2-section1 .map{
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  box-sizing: border-box;
+  border:1px solid #CCC;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+.map2 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+/* .map2{display: none !important;} */
+.hide{display: none !important;}
+.tab-menu{
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 600px;
+  height: 45px;
+  border-bottom: 1px solid #CCC;
+  text-align: center;
+}
+.tab-menu button{
+  height: 46px;
+  padding: 0 15px;
+  border-radius: 20px 0 0 0;
+  border:1px solid #CCC;
+  background: #EEE;
+}
+.tab-menu button.active{
+  color:var(--point-color);
+  background: #FFF;
+  border-bottom-color:#FFF;
+}

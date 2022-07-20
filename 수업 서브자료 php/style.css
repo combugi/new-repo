@@ -1,0 +1,32 @@
+:root{
+  --main-color:#BBB1A6;
+  --sub-color: #8E7760;
+  --point-color:#F99D1B;
+  --dark-color:#1F1D1D;
+  --grey-color:#2F2F2F;
+}
+
+
+
+@media screen and (max-width:1000px) {
+  body {
+    padding-top:125px;
+  }
+}
+@media screen and (max-width:1000px) {
+  body {
+    padding-top:100px;
+  }
+}
+body{
+ 
+  font-family:'Nanum Gothic','Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 160%;
+  color:#666;
+}
+.center-width{
+  margin: 0 auto;
+  width: 95%;
+  max-width: 1200px;
+}

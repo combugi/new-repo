@@ -1,0 +1,19 @@
+:root{
+  --main-color:#32343e;
+  --sub-color: #333;
+  --point-color:#F99D1B;
+  --dark-color:#1F1D1D;
+  --gray-color:#2F2F2F;
+}
+
+body{
+  font-family:'Nanum Gothic','Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 160%;
+  color:#666;
+}
+.center-width{
+  margin: 0 auto;
+  width: 95%;
+  max-width: 1200px;
+}
