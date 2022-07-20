@@ -1,0 +1,108 @@
+main {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+main section.feature {
+  padding: 50px 0;
+  border: 1px solid black;
+
+}
+
+/* feature section */
+main section.feature li img {
+  width: 100%;
+}
+
+main section.feature li h3 {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+main section.feature li em {
+  font-weight: bold;
+  margin: 15px 0;
+  font-size: 1.1em;
+}
+
+main section.feature li p {
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width:1000px) {
+  main section.feature ul {
+    display: flex;
+    justify-content: space-between;
+
+
+  }
+
+  main section.feature ul li {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    background: cadetblue;
+  }
+
+  main section.feature ul li p {}
+}
+
+@media screen and (max-width:1000px) {
+  main section.feature ul li {
+    background: yellow;
+    margin-bottom: 20px;
+  }
+
+  main section.feature ul li:last-child {
+    margin-bottom: 20px;
+  }
+}
+
+/* section ci */
+section.ci {
+  padding: 50px 0;
+  background: #eee;
+}
+
+section.ci ul {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+section.ci ul li {
+  padding: 30px;
+  box-sizing: border-box;
+  background: green;
+  text-align: center;
+}
+
+section.ci ul li i {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background-color: black;
+  color: #eee;
+  border-radius: 50%;
+  
+}
+
+@media screen and (min-width:1000px) {
+  section.ci ul li {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width:500px) and (max-width:1000px) {
+  section.ci ul li {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width:500px) {
+  section.ci ul li {
+    width: 100%;
+  }
+}

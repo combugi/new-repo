@@ -1,0 +1,40 @@
+.container{
+  position: relative;
+  width: 250px;
+  margin:  50px auto;
+}
+.container .box{
+  position: absolute;
+  top: 0; left: 0;
+  width: 50px;
+  height: 50px;
+  background: black;
+}
+
+.container table{
+  border-collapse: collapse;
+}
+.container table td{
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+.indicator{
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+.indicator button{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+
+}
+.indicator  button .up{
+  
+  left: 50px; top:0;
+}
+.indicator 

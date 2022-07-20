@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="./jquery/script1.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="ex1">
+    <p>1.가격계산하기</p>
+    <!-- value 홈요소에서만 사용가능하고 사용자가 바꿀수 있는것 -->
+    상품
+    <select>
+      <option value="500">빵500</option>
+      <option value="600">과자600</option>
+      <option value="700">음료수 700</option>
+
+
+    </select>
+    <br>
+    옵션<!-- radio  -->
+
+
+    <input type="radio" name="option"value='10'>딸기맛(+10원)
+    <input type="radio" name="option"value='20'>포도맛(+20원)
+    <input type="radio" name="option"value='30'>메론맛(+30원)
+    
+    <br>
+
+    수량 <input type="number">개
+    <br>
+
+    <button>가격확인</button>
+
+  </div>
+
+  <hr>
+
+  <div class="ex2">
+    <!-- 소수점 2자리까지만 출력 
+    결과 예시:총점은 160점 평균은 53.33점 입니다.-->
+    <p>2.평균점수 구하기</p>
+    국어:<input type="number" class="number1"> <br>
+    수학:<input type="number" class="number2"> <br>
+    영어:<input type="number" class="number3"> <br>
+
+    <button>점수확인</button>
+    <!-- 국+수+영 /3 -->
+  </div><!-- ex2 -->
+  <br>
+  <div class="ex3">
+    <p>3.1부터 입력한 숫자의 합을 구하기</p>
+
+    1~<input type="number" placeholder="제발 짝수만 입력해주세요">까지의 합
+
+    <button>결과보기</button>
+  </div>
+
+  <br>
+  <div class="ex4">
+    <p>여백의 크기 구하기</p>
+
+     <button>여백의 한개의 넓이</button>
+
+  </div>
+
+  
+
+</body>
+</html>

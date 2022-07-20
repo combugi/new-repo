@@ -1,0 +1,5 @@
+li{list-style:none;
+}
+ul.hobby li::before{
+  content: '·'; /* alt누른 상태에서 183을 누르고 alt를  떼면 가운데점(·)이 나온다. */
+}

@@ -1,0 +1,3 @@
+입력요소(폼요소)에서 값을 호출하기1
+입력요소 select,ratio,toFixed()
+"http://code.jquery.com/jquery-latest.js"제이쿼리 스크립 

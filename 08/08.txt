@@ -1,0 +1,2 @@
+웹 브라우저에서 이미지 출력하는 방법
+img요소,background속성,objectfit 속성

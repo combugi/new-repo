@@ -1,0 +1,13 @@
+/* style guide */
+:root{
+  --main-color:#445678;
+}
+body{
+  font-family: 'Montserrat', 'Noto Sans KR',  sans-serif; 
+  color:#333;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 160%;
+}

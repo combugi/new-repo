@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/28css-1/28-1.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>시멘틱 테이블</h1>
+  <p>시멘틱이란 브라우저가 이해할수있고,브라우저가 읽기 쉬운 구조를 설계해야함 <br>
+    구조가 복잡한 테이블은 권장하지 않음
+  </p>
+  <ul>
+    <li>fieldname은 th사용,th는 scope속성을 추가한다</li>
+    <li>thead: tr의 부모로 와야한다.</li>
+    <li>tbody:데이터 줄을 포함,반드시 table에 존재해야함</li>
+    <li>tfoot: 데이터와 상관이 없는줄 포함</li>
+    <li>caption:표의 제목</li>
+  </ul>
+  <hr>
+
+  <table class="table">
+    <caption>학생명단</caption>
+    <thead>
+      <tr>
+        <th scope="col">번호</th>
+        <th scope="col">성명</th>
+        <th scope="col">아이디</th>
+        <th scope="col">전화</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <!-- 2 -->
+        <td>1</td>
+        <td>홍길동</td>
+        <td>aa</td>
+        <td>010</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>아무개</td>
+        <td>bb</td>
+        <td>101</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>무개무</td>
+        <td>cc</td>
+        <td>012</td>
+      </tr>
+
+    <tfoot>
+      <tr>22.4월기준</tr>
+    </tfoot>
+    </tbody>
+
+  </table>
+  <hr>
+
+  <table class="table2">
+    <thead>
+      <tr>
+        <th class="th1" scope="colgroup" rowspan="2">구분</th>
+        <th scope="colgroup" colspan="3">상품종류</th>
+
+      </tr>
+      <tr>
+
+        <th scope="col">스마트폰</th>
+        <th scope="col">태블릿pc</th>
+        <th scope="col">데스크탑pc</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1월</th>
+        <td>5만대</td>
+        <td>3만대</td>
+        <td>1만대</td>
+      </tr>
+      <tr>
+        <th scope="row">2월</th>
+        <td>7만대</td>
+        <td>2만대</td>
+        <td>1만대</td>
+      </tr>
+    </tbody>
+
+  </table>
+  <hr>
+  <table class="table3">
+    <thead>
+      <tr>
+      
+      <th scope="colgroup" colspan="2" rowspan="3">영역</th>
+      
+      <th scope="colgroup" colspan="2">1등급</th>
+     
+      <th scope="colgroup" colspan="2">2등급</th>
+      
+      <th scope="colgroup" colspan="2">3등급</th>
+      
+      <th scope="colgroup" colspan="2">4등급</th>
+     
+    </tr>
+    <tr>
+     
+      <th scope="col" >원점수</th>
+      <th scope="col" >표준점수</th>
+      <th scope="col" >원점수</th>
+      <th scope="col" >표준점수</th>
+      <th scope="col" >원점수</th>
+      <th scope="col" >표준점수</th>
+      <th scope="col" >원점수</th>
+      <th scope="col" >표준점수</th>
+    </tr>
+
+  </thead>
+    <tbody>
+      <tr>
+      <th scope="row" colspan="2">언어</th>
+      
+      <td>80</td>
+      <td>80</td>
+      <td>80</td>
+      <td>80</td>
+      <td>80</td>
+      <td>80</td>
+      <td>80</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <th scope="row" colspan="2">수리가</th>
+      
+      <td>80</td>
+      <td>80</td>
+      <td>80</td>
+      <td>80</td>
+      <td>80</td>
+      <td>80</td>
+      <td>80</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <th scope="row" colspan="2">수리나</th>
+      
+      <td>80</td>
+      <td>80</td>
+      <td>80</td>
+      <td>80</td>
+      <td>80</td>
+      <td>80</td>
+      <td>80</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <th scope="row" colspan="2">외국어</th>
+      
+      <td>80</td>
+      <td>80</td>
+      <td>80</td>
+      <td>80</td>
+      <td>80</td>
+      <td>80</td>
+      <td>80</td>
+      <td>80</td>
+    </tr>
+</tbody>
+    
+
+
+
+
+
+
+
+  </table>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+header{
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1000px;
+  height: 100px;
+  margin: 10px auto;
+  background-color: grey;
+  
+}
+h1{
+  
+  height: 45px;
+}
+h1 img{
+  height: 100%;
+}
+h1 span{
+  position: fixed;
+  left: -10000px;
+}
+
+header nav a{
+  margin: 0 3px;
+  
+}
+header nav a:hover{
+  text-decoration: underline;
+  color: antiquewhite;
+}
+nav.gnb{
+ width:1000px;
+ height: 40px;
+ margin: 10px auto;
+ background: darkgrey;
+}
+nav.gnb>ul{
+  
+  display: flex;
+  color: azure;
+ height:100%;
+ align-items: center;
+ justify-content:center;
+background-color: brown;
+  
+}
+
+nav.gnb>ul>li{
+  
+  height: 100%;
+}
+nav.gnb>ul>li>a{
+  display: block;
+  background: blue;
+  height: 100%;
+  margin: 0 20px;
+  
+  line-height: 30px;
+}
+nav.gnb>ul>li>a:hover{
+  background: black;
+  color: beige;
+}

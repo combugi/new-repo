@@ -1,0 +1,259 @@
+.ex1 {font-size: 50;}
+.ex1 span{color:black;
+   width: 100px;
+     display: inline-block;
+     text-align: center;
+     line-height: 50px;
+     vertical-align: top;
+}
+
+.ex1 span:nth-child(1){color:antiquewhite;
+  background-color: yellow;
+  height: 150px;
+  line-height:150px
+}
+
+.ex1 span:nth-child(2){color:antiquewhite;
+  background-color: yellow;
+  height: 100px;
+  line-height: 100px;
+}
+.ex1 span:nth-child(3){color:antiquewhite;
+  background-color: yellow;
+  height: 50px;
+  line-height: 50px;
+}
+/* ex1 */
+
+
+
+
+
+.ex2 span{color:black;
+  width: 100px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    vertical-align:bottom;
+}
+
+.ex2 span:nth-child(1){color:antiquewhite;
+ background-color:yellowgreen;
+ height: 150px;
+ line-height:150px
+}
+
+.ex2 span:nth-child(2){color:antiquewhite;
+ background-color:yellowgreen;
+ height: 100px;
+ line-height: 100px;
+}
+.ex2 span:nth-child(3){color:antiquewhite;
+ background-color:yellowgreen;
+ height: 50px;
+ line-height: 50px;
+}
+/* ex2 */
+
+
+
+
+.ex3 {color:cadetblue;
+background-color:darkgoldenrod;
+width: 200px;
+height: 200px;
+margin:0 auto;
+line-height: 200px;
+text-align: center;
+
+}
+.ex3 span{
+  display: inline-block;
+  color: black;
+background-color: chocolate;
+width: 100px;
+height: 100px;
+line-height: 100px;
+margin: 50px auto;
+/* ex3 */
+}
+
+
+
+
+
+
+.ex4 {background-color: yellow;
+width: 300px;
+height: 200px;
+text-align: center;
+margin: 0 auto;
+line-height:200px;
+vertical-align: middle;
+
+}
+
+.ex4 span:nth-child(1){
+  display: inline-block;
+  background-color: brown;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+}
+.ex4 span:nth-child(2){
+  display: inline-block;
+  background-color: brown;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+}
+.ex5{
+  background-color: yellow;
+  width: 500px;
+  margin:0 auto;
+
+  
+
+  
+  
+}
+
+.ex5 span{display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0 0 0 auto;
+  line-height: 100px;
+  text-align: center;
+  background-color: black;
+color: azure;}
+
+.ex6{background-color: yellow;
+width:1900px;
+
+}
+
+.ex6 span{color:whitesmoke;
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  margin: 0 0 0 auto;
+  display: block;
+  text-align: center;
+  line-height: 100px;
+}
+
+
+
+
+.ex7{display: block;
+  background-color: teal;
+width: 1900px;
+text-align: center;
+
+
+
+
+}
+
+
+
+.ex7 span:nth-child(1){background-color: black;
+color: beige;
+width: 100px;
+height: 100px;
+display:inline-block;
+text-align: center;
+line-height: 100px;
+
+
+
+}
+
+.ex7 span:nth-child(2){background-color: cornsilk;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  text-align: center;
+  line-height: 100px;
+ 
+  
+}
+
+.ex8{background-color: coral;
+width: 2000px;}
+
+.ex8 span:nth-child(1){background-color: black;
+color: azure;
+width: 100px;
+height: 100px;
+display: block;
+margin: auto auto;
+text-align: center;
+line-height: 100px;}
+
+.ex8 span:nth-child(2){background-color: black;
+  color: azure;
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 0 0 auto;
+  text-align: center;
+  line-height: 100px;}
+
+
+
+
+  .ex9{background-color:sienna;
+    width: 2000px;}
+    
+    .ex9 span:nth-child(1){background-color: black;
+    color: azure;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin:0 auto 0 0;
+    text-align: center;
+    line-height: 100px;}
+    
+    .ex9 span:nth-child(2){background-color: black;
+      color: azure;
+      width: 100px;
+      height: 100px;
+      display: block;
+      margin: 0 0 0 auto;
+      text-align: center;
+      line-height: 100px;}
+
+      .ex9 span:nth-child(3){background-color: black;
+        color: azure;
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin: 0 auto 0 0;;
+        text-align: center;
+        line-height: 100px;}
+        
+        .ex9 span:nth-child(4){background-color: black;
+          color: azure;
+          width: 100px;
+          height: 100px;
+          display: block;
+          margin: 0 0 0 auto;
+          text-align: center;
+          line-height: 100px;}
+      
+    
+
+
+
+
+
+
+/* block 형태일 경우 margin... margin시도는 했지만 안됐다.
+inline-block 형태일 경우 div text align도 line-height(부모에게 상속받으므로 자식에게도 
+똑같은 높이로 줄 높이 간격을 줘야한다) */
+
+
+
+
+

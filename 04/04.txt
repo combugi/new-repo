@@ -1,0 +1,4 @@
+이벤트 작성,비동기 이벤트,변수의 범위(scope)
+바닐라스크립트(es6),순정 문법과 제이쿼리(jquery;자바스크립트 라이브러리)
+<script src="http://code.jquery.com/jquery-latest.js"></script> 자바스크립트 스크립 관련
+cdn

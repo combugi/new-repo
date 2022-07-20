@@ -1,0 +1,43 @@
+*{
+   /* all:unset ; 완전 초기화 옵션 */
+/* 전반적인 테마를 설정하는  스타일 가이드, 리젯은 기본 베이스 */
+margin: 0 ;
+padding: 0;
+ color:inherit;
+ color: red;
+ font-size: 14px;
+ font-weight: normal;
+ font-style: normal;
+ text-decoration: none;
+ line-height: 160%;
+ font-family:inherit ;
+}
+li{
+  list-style:none;
+}
+a{
+  text-decoration: none;
+}
+input,textarea,select{
+  box-sizing: border-box; /* 버튼은 이미 box sizing이 되어있음 */
+ 
+}
+button{
+   border: none;
+  cursor: pointer;
+
+}
+table{
+  border-spacing:0 ;
+  border-collapse:collapse;
+
+}
+img,iframe{
+  display: block;}
+
+iframe{
+  border: none;}
+
+.hidden{position: fixed;
+  left: -10000px;
+}

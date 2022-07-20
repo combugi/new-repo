@@ -1,0 +1,35 @@
+section.visual{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:0 auto;
+  width: 95%;
+  max-width: 1200px;
+  
+  background: #CCC;
+}
+@media screen  and (min-width:1000px){
+  section.visual{
+    height: calc(100% - 100px);
+  }
+}
+@media screen  and (max-width:1000px){
+  section.visual{
+    height: calc(100% - 80px);
+  }
+}
+
+section.visual h6{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+@media screen  and (min-width:1100px){
+  section.visual h6{
+    font-size: 90px;
+  }
+}
+@media screen  and (max-width:1100px){
+  section.visual h6{
+    font-size: 8vw;
+  }
+}

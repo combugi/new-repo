@@ -1,0 +1,46 @@
+table{border-collapse: collapse;
+
+}
+td,th{
+  border: 1px solid saddlebrown;
+}
+
+
+
+
+.table2{
+  width: 500px;
+  margin: 0 auto;
+
+}
+
+.table2 th[scope*="col"]{
+  width: 10%;
+  background-color: gray;
+}
+
+
+
+
+
+
+
+
+.table3{
+  margin: 0 auto;
+}
+
+.table3 th[scope*="col"]{
+  width: 10%;
+  background-color: rosybrown;
+}
+.table3 th[scope*="row"]{
+  background-color: aquamarine;
+}
+.table3 td{ color:darkcyan;
+text-align: center;}
+
+.table3 th[scope='col']{
+  writing-mode: horizontal-tb;
+  
+}

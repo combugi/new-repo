@@ -1,0 +1,15 @@
+main{width: 650px;
+margin: 10px auto;
+background: red;}
+
+main section.feature ul{
+display: flex;
+justify-content: space-between;
+}
+main section.feature ul li{
+  width: 210px;
+}
+main section.feature ul li img{
+ 
+  width: 100%;
+}

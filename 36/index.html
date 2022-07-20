@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./36css/36ssc.css">
+  <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+  <script src="./36js/36sj.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>css 동적제어</h1>
+  <ul>
+    <li>css({'css 속성':'값','css속성':'값'}) <br>
+    인라인 스타일을 이용한 것이다. </li>
+    <li>addClass('클래스명 클래스명'),removeClass('클래스명 클래스명'),toggleClass('클래스명1,클래스명2') <br>
+    여러개의 클래스를 추가  </li>
+    <li>show(),hide(),toggle() <br>
+    inline 스타일의 display 속성을 변경하는방식</li>
+    <li>fadeIn(),fadeOut(),fadeToggle() <br>
+      inline 스타일을 이용해서투명해지면서 사라직
+    나타나는 방식 마지막 명령어를 바로 실행시키려면 .stop()명령어를 실행시켜야 한다.</li>
+    <li>slideIn(),slideOut(),slideToggle() inline 스타일을 이용해서 <br>
+    접히는 효과  </li>
+
+
+
+  </ul>
+  <hr>
+  <div class="ex1">
+    <p>1.버튼을 클릭하면 지정된 모양 으로 변해요</p><!-- 버튼을 클릭할때 마다 색상이 바뀌어야한다-->
+    <div class="box"></div>
+    <br>
+      <button class="btn1">배경빨강, 넓이 200,높이100</button>
+      <button class="btn2">배경파랑,넓이 100,높이 200</button>
+    <button class="btn3">버튼</button>
+
+  </div><!-- ex1 -->
+  <hr>
+  <div class="ex2">
+    <p>2.버튼을 클릭하면 배경 형광 넓이 200 높이 200으로 변해요</p>
+    <div class="box"></div>
+    <br>
+    <button class="btn1">배경 형광 넓이 200 높이 200</button>
+    <button class="btn2">배경 레드 넓이 150 높이 150</button>
+  </div>
+  <hr>
+  <div class="ex3">
+    <p>3.버튼을 클릭하면 두개의 클래스를 추가한다</p>
+    <div class="box"></div>
+    <br>
+    <button>버튼</button>
+  </div>
+  <hr>
+  <div class="ex4">
+    <p>4.버튼을 클릭하면 배경색이 변해요</p>
+    <div class="box"></div>
+    <br>
+    <button class="btn1">빨강(css)</button>
+    <button class="btn2">노랑(add Class)</button>
+    <button class="btn3">원래대로</button>
+  </div><!-- ex4 -->
+  <div class="ex5">
+    <p>5.버튼을 클릭하면 박스가 사라지거나 보입니다</p>
+    <div class="box"></div>
+    <br>
+    <button class="btn1">숨기기</button>
+    <button class="btn2">보이기</button>
+    <button class="btn3">토글</button>
+  </div><!-- ex5 -->
+  <div class="ex6">
+    <p>6.버튼을 클릭하면 박스가 천천히 사라지거나 천천히 보입니다</p>
+    <div class="box"></div>
+  
+    <br>
+    <button class="btn1">숨기기</button>
+    <button class="btn2">보이기</button>
+    <button class="btn3">토글</button>
+  </div><!-- ex6 -->
+  <div class="ex7">
+    <p>7.버튼을 클릭하면 박스가 접혀지거나 펼쳐 보입니다</p>
+    <div class="box"></div>
+  
+    <br>
+    <button class="btn1">숨기기</button>
+    <button class="btn2">보이기</button>
+    <button class="btn3">토글</button>
+  </div><!-- ex7 -->
+  <div class="ex8">
+    <p>아코디언 메뉴 만들기</p>
+    <!-- 아코디언 왔다갔다하면서 움직이는 기능+ 질문칸이 활성화 될때 색상이변하면서 답변칸이 내려오면서 다른 질문칸은벌려지는 기능  -->
+
+    <button class="btn1">질문 1번</button>
+    <p class="answer answer1">답변1</p>
+    <button class="btn2">질문 2번</button>
+    <p class="answer answer2">답변2</p>
+    <button class="btn3">질문 3번</button>
+    <p class="answer answer3">답변3</p>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  </div>
+
+</body>
+
+</html>

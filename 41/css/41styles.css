@@ -1,0 +1,30 @@
+/* style guide */
+/* --main-color */
+:root {
+  --main-color: 111111;
+}
+
+/* span,a,button 은 상속으로 받게한다 */
+/* 나눔체,노토,맑은 고딕 */
+body {
+  background: var(--main-color);
+  font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+  color: red;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 160%;
+
+
+}
+
+h1 {
+  color: var(--main-color);
+
+}
+
+
+
+
+

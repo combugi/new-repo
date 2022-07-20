@@ -1,0 +1,40 @@
+ .visual{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 95%;
+  
+  max-width: 1200px;
+  
+  background: #eee;
+
+}
+
+
+@media screen and (min-width:1000px) {
+  section.visual {
+    height: calc(100% - 100px);
+  }
+  section.visual h6{
+    font-size: 90px;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  section.visual {
+    height: calc(100% - 80px);
+  }
+  section.visual h6{
+    font-size: 8vw; /* 화면 크기에따라 글자크기가 달라진다 */
+  } 
+
+
+
+
+}
+section.visual h6{
+  font-weight: bold;
+  text-transform: uppercase;
+  
+}

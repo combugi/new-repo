@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css19/css19.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>정렬 기초</h1>
+  <hr>
+  <h2>인라인,인라인-블록 레벨의 수직 정렬</h2>
+  <ul>
+    <li>vertical-align <br>
+      top,middle,bottom<br>
+      block 레벨에서는 사용할 수 없음
+
+    </li>
+    <li>
+      line-height <br>
+      줄간격을 설정하는 속성이지만,
+      한줄일 경우 요소의 높이와 동일하게 설정하면
+      중앙정렬 기능으로 변칙적으로 활용. 
+      요소 안쪽의 글자,인라인 계열에만 적용가능
+    </li>
+  </ul>
+  
+  <div class="ex1">
+
+    <span>span</span>
+    <span>span</span>
+    <span>span<br>span<br>span</span>
+
+
+  </div><!-- ex1 -->
+  <hr>
+
+  <div class="ex2"><!--넓이는 100*300 -->
+    <div>div</div><!-- 50*50 -->
+
+
+  </div>
+  <hr>
+
+  <div class="ex3"><!-- 넓이는 400*500 --> <!-- 박스안(.ex3)에 박스(.ex3 div)를 만들자.
+    박스안(.ex3)에 박스(.ex3 div)를 밑으로(.ex3는 ) 내리기 -->
+   <div></div><!-- 60*60 -->
+
+ </div><!-- ex3 -->
+  <hr>
+  <h2>수평정렬</h2>
+  <h3>객체안의 글자 수평정렬</h3>
+  <ul>
+    <li>text-align</li>
+    <li>요소안의 글자(인라인,인라인블록)를 정렬
+      left,center,right로 설정</li>
+  </ul>
+  <hr>
+  <div class="ex4">
+    <span>span</span>
+  </div><!-- ex4 -->
+
+  <h3>블록레벨의 중앙정렬</h3>
+  <ul>
+    <li>margin속성의 auto값을 이용함</li>
+    <li>인라인,인라인 블록레벨은 적용 되지 않는다.</li>
+    <li>margin속성의 auto값은 인라인,인라인 블록레벨은 적용되지 않는다.</li>
+  </ul>
+  <div class="ex5">
+    div
+
+
+
+
+  </div><!-- ex5 -->
+  <hr>
+
+  <div class="ex6"><!-- 150*300 -->
+    <img src="./img/testing html img.jpg" alt="" >
+
+
+  </div>
+
+  
+
+
+</body>
+
+</html>

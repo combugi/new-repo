@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 300px;
+      height: 300px;
+
+
+    }
+
+    .box>div {
+      width: 200px;
+      height: 200px;
+      background: green;
+
+    }
+
+    .box1 div div {
+      width: 100px;
+      height: 100px;
+      background: gold
+    }
+
+    .box2 div div {
+      width: 100px;
+      height: 100px;
+      background: black
+    }
+
+
+    .box1 {
+      background-color: red;
+      width: 300px;
+      height: 300px;
+    }
+
+    .box2 {
+      background-color: blue;
+      width: 300px;
+      height: 300px;
+    }
+    .container{  width: 300px;
+      height: 300px;
+      background:rebeccapurple
+    }
+
+
+
+    .container1 div {
+      width: 200px;
+      height: 200px;
+      background: red;
+    }
+
+
+    .container2 div {
+      width: 200px;
+      height: 200px;
+      background: blue;
+    }
+
+    .container1 div div {
+      width: 100px;
+      height: 100px;
+      background: black
+    }
+    
+    .container2 div div {
+      width: 100px;
+      height: 100px;
+      background: black
+    }
+
+
+    .wrap1{ width: 200px;
+      height: 200px;
+      background-color: darkred;
+    }
+    
+    
+    
+
+    .wrap2{width: 200px;
+      height: 200px;
+      background-color :blue;
+      
+
+    }
+  </style>
+</head>
+
+<body>
+  <h1>다양한 CSS 선택자</h1>
+  <ul>
+    <li>다중호출:class 속성의 여백을 이용해서 클래스 네임을 호출</li>
+    <li>자손선택자:선택자를 여백을 이용하여 연결</li>
+    <li>자식선택자:&gt;를 이용해서 연결</li>
+    <li>연결선택자:콤마기호를 이용해서 연결</li>
+
+
+
+
+
+
+
+  </ul>
+  <hr>
+  <div class="box box1">
+    <div>
+      <div> </div>
+    </div>
+
+  </div>
+  <br>
+  <div class="box box2">
+    <div>
+      <div></div>
+    </div>
+
+  </div>
+  <hr>
+
+  <div class="container container1">
+    <div>
+      <div></div>
+    </div>
+    <!--100,100 red -->
+  </div>
+
+  <div class="container container2">
+    <div>
+      <div></div>
+    </div>
+    <!--100,100b blue  -->
+  </div>
+  <hr>
+  <br>
+  <div class="wrap1">
+    <div></div><!--200  200red -->
+
+  </div>
+
+  <div class="wrap2">
+    <div></div><!-- 200 200 blue -->
+
+  </div>
+
+
+
+  <!-- 1).ex div > div에 해당 되는 객체의 수는?//예상 수 정정 2개 
+  2)가장 안쪽의 박스2개를 선택 할수 있는 모든 선택자를 작성해 보세욤
+  .ex> div >div 
+  .ex> div  div
+  .ex div > div
+  .ex div  div
+
+
+
+-->
+
+  <div class="ex1">
+    <div>
+      <div></div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="ex2"></div>
+  <div>
+    <div></div>
+  </div>
+  </div>
+
+
+
+</body>
+
+</html>

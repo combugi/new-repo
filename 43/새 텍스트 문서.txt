@@ -1,0 +1,1 @@
+증감연산,비동기 실행문(setinterval,setTime)

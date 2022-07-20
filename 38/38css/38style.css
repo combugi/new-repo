@@ -1,0 +1,41 @@
+.ex1 button{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+.ex1 button.active{
+background: black;
+}
+.answer{
+  display: none;
+}
+.box{display:inline-block;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+
+}
+.ex6 .box1,
+.ex6 .box2,
+.ex6 .box3{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

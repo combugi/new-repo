@@ -1,0 +1,105 @@
+.ex1 span{
+  display: inline-block;
+  width: 50px;
+  background-color: yellow;
+  vertical-align:bottom;
+}
+.ex1 span:nth-child(1){
+  height: 50px;
+}
+.ex1 span:nth-child(2){
+  height: 100px;
+}
+.ex1 span:nth-child(3){
+  height: 150px;
+  
+}
+.ex2 {background-color: violet;
+  width: 100px;
+  height: 300px;
+  line-height: 300px;
+
+  /* .ex2 =class  .ex2 div 는 클래스명 안에 div라는 블록이 있으므로
+  ex2에 줄간격을 줘야한다 그러므로 .ex2 div에게 display: inline-block을 줘야한다. */
+
+
+
+}
+.ex2 div{
+  
+ display: inline-block;
+  background-color: blue;
+  line-height: 50px;
+  width: 50px;
+  height: 50px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ex3{
+  width: 400px;
+  height: 500px;
+  background-color:brown;
+  line-height: 100px
+  
+  
+}
+.ex3 div{
+  display:block;
+  width:60px;
+  height:60px;
+  background-color: chartreuse;
+  line-height: 100px;
+  margin:auto 0;
+}
+.ex4{
+  width:200px
+  
+
+  
+ 
+}
+.ex4 span{
+  display:inline-block;
+  background-color: aquamarine;
+ 
+  
+  
+  
+
+}
+.ex5{
+  width: 400px;
+  
+  background-color: cadetblue;
+
+  margin: 0 0
+
+  /*ex)0 20(좌) 50 100(우)*/ /* 0(수직). 0(수평)*/
+
+}
+.ex6{
+  background-color: brown;
+  width: 150px;
+  height: 300px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 300px;
+  
+}
+.ex6 img{
+  vertical-align: middle;
+}
+
+ 
+

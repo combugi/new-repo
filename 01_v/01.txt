@@ -1,0 +1,3 @@
+01
+변수의 개념과 문자열 정리
+alert,prompt,parsent

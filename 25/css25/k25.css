@@ -1,0 +1,61 @@
+.ex1 {
+  background-color: gray;
+  width: 1000px;
+
+  text-align: center;
+  padding: 10px 0;
+}
+
+.ex1 div {
+  background-color: darkgray;
+  color: antiquewhite;
+  width: 200px;
+  height: 40px;
+  display: inline-block;
+
+
+}
+
+
+
+.ex2 {
+  background-color: darkgray;
+  width: 1000px;
+  padding: 100px;
+  box-sizing: border-box;
+
+
+}
+
+.ex2>div {
+  background-color: black;
+  width: 350px;
+  padding: 100px;
+  box-sizing: border-box;
+
+
+}
+
+.ex2>div {
+  background-color: black;
+  width: 350px;
+  padding: 100px;
+  box-sizing: border-box;
+}
+
+.ex2>div:nth-child(){}
+
+
+.ex2>div:nth-child(2){
+  margin: 100px 0 0 450px;
+}
+.ex2>div:nth-child(3){
+  margin:100px auto 0 auto;
+}
+
+
+.ex2>div>div {
+  background: white;
+  width: 150px;
+  height: 150px;
+}

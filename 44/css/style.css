@@ -1,0 +1,96 @@
+header {
+  margin: 10px auto;
+  width: 95%;
+  max-width: 800px;
+  /* 이하 제약을둠 */
+  height: 100px;
+  background: darkgrey;
+
+}
+
+div.wrap {
+  margin: 10px auto;
+  width: 95%;
+  max-width: 800px;
+
+}
+
+aside div {
+
+
+  height: 200px;
+  background: cadetblue;
+
+}
+
+/* 분기 별로 하면이 변하면 높이를 안준다 */
+
+main {
+  height: 410px;
+  background: azure;
+
+}
+
+footer {
+  margin: 10px auto;
+  width: 95%;
+  max-width: 800px;
+  height: 100px;
+  background: greenyellow;
+}
+
+
+
+@media screen and (min-width:1000px) {
+  div.wrap {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  aside {
+    width: calc(25% - 10px);
+  }
+
+  aside div:first-child {
+    margin-bottom: 10px;
+  }
+
+  main {
+    width: 75%;
+  }
+
+}
+
+
+
+
+
+
+@media screen and (max-width:1000px) {
+  aside {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  aside div {
+
+    width: calc(50% - 10px);
+   
+  }
+
+}
+
+@media screen and(max-width:500px) {
+  aside {
+    display: none;
+  }
+}
+
+
+
+
+
+/* calc(계산기)기능 를 쓸시 안에 공백이 있어야한다  */

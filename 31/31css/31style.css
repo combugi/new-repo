@@ -1,0 +1,106 @@
+.ex1{
+  width: 980px;
+  margin: 0 auto;
+  border:1px solid black;
+  padding-top: 20px;
+  
+}/*ex1*/
+.ex1 div{
+  width: 300px;
+  height: 300px;
+  margin-bottom: 20px;
+  background:seagreen;
+}
+.ex1::after{/* clear fix */
+  content: "";
+  display: block;
+  clear:both;
+  background-color: red;
+}
+.ex1 .box1,
+.ex1 .box2,
+.ex1 .box3,
+.ex1 .box4,
+.ex1 .box5,
+.ex1 .box6,
+.ex1 .box7{
+  float: left;
+  margin-left: 20px;
+}
+.ex1 .box3{
+   clear: both;
+}
+.ex1 .box7{
+  float: right;
+  margin-right: 20px;
+}
+.ex1 .wbox{
+  width: 460px;
+}
+.ex1 .box8{
+  float: left;
+  margin-left: 20px;
+
+}
+.ex1 .box9{
+  float: left;
+  margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+.ex2{
+  margin: 0 auto;
+  border:2px solid black;
+  width: 980px;
+  padding-top: 20px;
+  
+}
+.ex2::after{/* clear fix */
+  content: "";
+  display: block;
+  clear:both;
+  background-color: red;
+}
+
+.ex2 .wbox{
+  width: 300px;
+  height: 620px;
+  background-color: black;
+  margin-bottom: 20px;
+
+}
+.ex2 .sbox{
+  width: 300px;
+  height: 300px;
+  background-color: aquamarine;
+  margin-bottom: 20px;
+}
+.ex2 .box1,
+.ex2 .box2,
+.ex2 .box3,
+.ex2 .box4{
+  float:left;
+  margin-left:20px;
+  margin-bottom: 20px;
+}
+.ex2 .box5{
+  clear:both;
+}
+.ex2 .box5,
+.ex2 .box6,
+.ex2 .box7,
+.ex2 .box8{
+  float:right;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+
+  
+ 

@@ -1,0 +1,2 @@
+자바 스크립트로 css 제어(동적 제어),show(),hide(),toggle()(보여지느ㅡㄴ 효과),fadeIn()fadeOut(),fadeToggle(),stop()
+slideUp(),slideDown(),slideToggle() 접히는 효과 

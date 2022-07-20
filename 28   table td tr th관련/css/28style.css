@@ -1,0 +1,99 @@
+table{
+border-spacing: 0;/*  borser-spacing은 table에만 적용시킬수 있다.collapse가들어가면 spacing은 의미가 없어진다 */
+border-collapse: collapse; /*  겹치는선 하나로 뭉치기,테이블에만 적용가능 */
+width: 500px;
+margin: 20px auto;}
+table.table1{
+  border-spacing: 0;/*  borser-spacing은 table에만 적용시킬수 있다.collapse가들어가면 spacing은 의미가 없어진다 */
+  border-collapse: collapse; /*  겹치는선 하나로 뭉치기,테이블에만 적용가능 */
+  width: 500px;
+  margin: 20px auto;}
+  
+
+table.table1 td{
+  border:1px solid black;
+  width: 50%;
+  height: 50px;
+  vertical-align:bottom;
+  }
+
+
+
+
+table.table2{ 
+  border-spacing:0;
+  border-collapse: collapse;
+  width:200px;
+  margin: 20px auto;
+  
+}
+
+table.table2 td{
+  border: 1px solid violet;
+  width: 50px;
+  height: 50px;
+  
+  text-align: center;
+  
+  
+}
+table.table2  .sideway{
+  text-align: right;
+  letter-spacing: 10px;
+}
+.rtb{
+  writing-mode: vertical-lr;
+  text-orientation:upright;
+}
+
+
+
+
+
+
+
+table.table4{
+  border-spacing: 0;
+  border-collapse: collapse ;
+  width: 500px;
+  margin: 30px auto;
+
+ 
+  
+}
+table.table4 td{ 
+
+  border: 1px solid salmon;
+  width: 50px;
+  height: 50px;
+ 
+  
+}
+.table4.wrt{
+  writing-mode:vertical-lr;
+text-orientation: sideways;}
+
+.grays{background-color: gray;}
+.reds{background-color: red;}
+
+
+
+table.table5{
+  border-spacing: 0;
+  border-collapse: collapse ;
+  width: 500px;
+  margin: 30px auto;
+
+ 
+  
+}
+.greys{background-color: grey;}
+
+table.table5 td{ 
+  border: 1px solid salmon;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  
+  
+}

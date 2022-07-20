@@ -1,0 +1,44 @@
+.ex1 *{/*body,html,.ex1  span,.ex2 span*/
+  color:blue;
+
+} 
+.ex1  *{color: red;}
+
+/* ex2div 붙여쓰기 할경우 클래스명,ex2 .div 띄어쓰기할경우 ex2안에 .div가 있다
+.ex1.ex2.ex3은 이름  혹은 별명이 다 존재하다.*/
+
+div.ex2{color:blue;}
+
+
+.ex3 *:hover{color:red;}
+.ex3 *:active{color:blue;}
+/*b:first-child 첫번째인! b태그  c:last-child 마지막번째인! c태그*/
+
+.ex4 *:first-child,
+.ex4 *:last-child{color:red;}
+
+.ex5:first-of-type{color:brown;}/*first,last-of-type =그 중의 첫번째 전부*/
+
+.ex6 *:nth-child(3){color:aquamarine;}
+
+.ex7 span:nth-of-type(even){color:crimson;}
+
+.ex8 i:nth-last-child(2n+1){color:chartreuse}
+
+.ex9 a[href]{
+  text-decoration: none;
+}
+.ex9 a[href="#"]{color:darkred;}
+
+span.quiz{
+  display: inline-block;
+  padding: 50px;
+  background:yellow;
+}
+span.quiz b{
+  letter-spacing: 20px;
+}
+.quiz:hover b:nth-child(odd){text-decoration: underline;}
+
+
+

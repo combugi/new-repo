@@ -1,0 +1,226 @@
+.ex1 button {
+  padding: 15px 30px;
+  border: 1px solid saddlebrown;
+  background: cadetblue;
+  border-radius: 0 20px 0 20px;
+  /* 값을 준 곳에서 곡선형태를 보이며 깎인 것을 확인할수가 있음 */
+  transition: all 0.5s;
+}
+
+.ex1 button:hover {
+  background: black;
+  color: aliceblue;
+  border-radius: 20px;
+}
+
+.ex1 .btn1 {
+  transition: all 0.5s;
+}
+
+.ex1 .btn2:hover {
+
+  transition-delay: 0s, 0.5s, 1s;
+}
+
+.ex1 .btn2 {
+  /* 배경색이까매지고 글자색상이 흰색이고,동그래진다. */
+  transition: background 0.5s, color 0.5s, border-radius 0.5s;
+  transition-delay: 0s, 0.5s, 1s;
+}
+
+.ex2 {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 50px;
+  transition: width 0.5s, background 0.5s, color 0.5s;
+  transition-delay: 0.5s, 0s, 0s;
+}
+
+/* 마우스가 들어갈때 넓이가 0.5초동안 200px된후에 ,배경색(블랙)과 글자색이 반전된다
+마우스가 나갈때 0.5초동안 배경색 (흰색) 글자색 (블랙) 변한후에 넓이가 0.5초동안 100px */
+.ex2:hover {
+  width: 200px;
+  background: black;
+  color: aliceblue;
+  transition: 0s, 0.5s, 0.5s;
+
+}
+
+.ex3 {
+  width: 50px;
+  height: 50px;
+  border: 1px solid bisque;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 50px;
+
+  transition: border-radius 0.5s, width 0.5s;
+  transition-delay: 0.5s, 0s;
+}
+
+.ex3:hover {
+  border-radius: 50px;
+  width: 100px;
+  transition-delay: 0s, 0.5s;
+
+}
+
+/* 마우스 호버시 0.5초 동그랗게 변한 후,0.5초동안 넓이가 100으로 변한다
+원래대로 돌아와야한다 0.5초동안 넓이가 50으로 변한후 0.5초 사각형 으로 돌아와야한다*/
+button.ex4 {
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  border: 1px solid seagreen;
+  background: wheat;
+  animation-name: round;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: paused;
+}
+
+button.ex4:hover {
+  animation-play-state: running;
+
+}
+
+@keyframes round {
+  0% {
+    border-radius: 0;
+    background: white;
+    color: aqua;
+  }
+
+  100% {
+    border-radius: 50px;
+    background: black;
+    color: orangered;
+  }
+}
+
+.ex5 {
+  width: 50px;
+  height: 50px;
+  background: red;
+  animation: move 3s infinite linear;
+  /* 네임 초 횟수 등감가속도 설정  */
+
+}
+
+@keyframes move {
+  0% {
+
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: 300px;
+
+  }
+}
+
+.ex6 {
+  padding: 20px;
+  border: 1px solid burlywood;
+  background-color: blanchedalmond;
+  text-align: center;
+
+}
+
+.ex6 button {
+  /*  커서를 div에 올릴시 버튼은 애니메이션효과가 나타나며 동작 123순으로 로딩이미지 같은 효과  */
+  border: 1px solid black;
+  padding: 20px;
+  background-color: cornflowerblue;
+
+}
+
+
+.ex6:hover button {
+  animation: twinkle 1s infinite alternate;
+}
+
+.ex6 button:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.ex6 button:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.ex6 button:nth-child(3) {
+  animation-delay: 1s;
+}
+
+@keyframes twinkle {
+  0% {
+    background-color: aliceblue;
+    color: chartreuse;
+  }
+
+  100% {
+    background-color: black;
+    color: blue
+  }
+}
+
+.ex7 div {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  margin: 30px auto;
+  background: whitesmoke;
+  border: 1px solid black;
+}
+
+.ex7 div:nth-child(1) {
+  transform: translateX(-100px) translateY(-100px);
+}
+
+.ex7 div:nth-child(2) {transform: rotate(-45deg);
+transform-origin: center bottom;}/* deg은 각도 단위 */
+
+.ex7 div:nth-child(3) {
+  transform: scale(2);
+}
+
+
+.ex8 div {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);/* 부모기준으로 움직이지만 transform의 translate이란 기능은 객체 자신기준으로 움직인다 */
+
+  background-color: cyan;
+}
+.ex9{
+  text-align: center;
+}
+.ex9 button{
+  width: 100px;
+  height: 100px;
+  border:1px solid sandybrown;
+  background: firebrick;
+  color: black;
+ 
+  transition:background 0.5s color 0.5s  border-radius 0.5s transform 0.5s ;
+  transition-delay: 1s 1s 0.5s 0.5s;
+}
+.ex9 button:hover {
+  background: black;
+  color: aliceblue;
+  border-radius: 50%;
+  
+  transition-delay: 0.5s, 0.5s, 0.5s, 1s;
+  transform: scale(1.2);
+
+}
+
+
+/* 검> 동> 넓이커짐
+원래대로 넓이 작아짐 사각형 흰색 */

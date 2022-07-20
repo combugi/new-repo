@@ -1,0 +1,1 @@
+attr('속성명'; attribute).복습,$(this),data-속성

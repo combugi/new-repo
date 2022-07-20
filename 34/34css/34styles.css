@@ -1,0 +1,167 @@
+div,
+span {
+  border: 1px solid black;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.ex1 {
+  display: flex;
+
+
+}
+
+span.ex2,
+div.ex2 {
+  display: flex;
+  width: 500px;
+  margin: 0 auto;
+
+}
+
+div.ex2.reverse {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+span.ex2.reverse {
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+}
+
+span.ex2 {
+  flex-direction: row;
+}
+
+div.ex2 {
+  flex-direction: column;
+}
+
+/* 3 */
+div .ex3,
+span .ex3 {
+  display: flex;
+  width: 500px;
+  margin: 0 auto;
+}
+
+span.ex3 {
+  flex-direction: column;
+  width: 500px;
+  height: 400px;
+}
+
+div .ex3 .space {
+  justify-content: space-between;
+}
+
+div .ex3 .end {
+  flex-direction: row;
+}
+
+/* 4 */
+div.ex4,
+span.ex4 {
+  display: flex;
+  /*  align-items: stretch; 기본으로 세팅 되어있다 */
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+div.ex4.row {
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  justify-content: left;
+}
+
+span.ex4 {
+  flex-direction: column;
+}
+
+div.test,
+span.test {
+  display: flex;
+  width: 400px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+div.test {
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+span.test {
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+div.testing,
+span.testing {
+  display: flex;
+  width: 400px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+
+
+div.testing {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+span.testing {
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: flex-end;
+
+
+}
+
+div.ex5,
+span.ex5 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+span.ex5 {
+  flex-direction: column;
+}
+
+.ex5 * {
+  flex: 1;
+}
+
+div.ex5 div:nth-child(2) {
+  width: 150px;
+  flex: none;
+}
+div.ex6{display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: 0 auto;
+}
+div.ex6 div{width: 33.33%;}
+
+
+
+
+
+
+
+
+
+.ex7{display: flex;
+height: 200px;
+align-items: center;
+text-align: center;
+justify-content: center;  }

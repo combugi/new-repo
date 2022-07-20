@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css관련</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <h1>다양한 선택자</h1>
+  <hr>
+  <h2>전체 선택자,연결 선택자</h2>
+  <h3>전체선택자</h3>
+
+  <p>*,모든객체를 선택,(상속개념과 혼동하지 말 것)
+
+  </p>
+  <div class="ex1" >
+    <span>span1</span>
+      <a>span2</a>
+    <span>span3</span>
+  </div><!-- ex1 -->
+
+  <h3>연결선택자</h3>
+  <p>객체를 정확히 명시적으로 가독성 높게 선택하는 목적</p>
+  <div class="ex2">div ex2</div>
+  <p class="ex2">p ex2</p>
+
+  <hr>
+  <h2>가상클래스 선택자</h2>
+
+  <p>가상클래스: 미리 정해놓은 클래스 명칭
+
+  </p>
+  <h3>:hover 는 설정 글을 마우스 커서로 갖다댈시 밑줄쳐지는 현상이 나타나게 해주는 가상 클래스</h3>
+        :active는 설정한 글을 마우스 커서로 눌렀다 떼기 직전까지 나타나는 가상 클래스
+
+  <div class="ex3"> <!-- hover 파랑 active 빨강 -->
+    <span>span</span>
+    <em>em</em>
+
+
+
+  </div><!-- ex3 -->
+  <h3>:first-child(첫번째 자식;객체;), :last child(마지막 자식;객체;)</h3>
+  <p>동일한 요소끼리 순서를 정하는게 아님!</p>
+  <div class="ex4">
+    <span>span</span><!-- span 빨간색 -->
+    <b>bold</b>
+    <em>em</em>
+    <i>i</i>
+    <!-- ex 4 -->
+
+
+
+
+
+  </div>
+  <div class="ex5">
+    <span>span</span>
+    <span>span</span>
+    <b>b</b>
+    <b>b</b>
+    <em>em</em>
+    <em>em</em>
+    <i>i</i>
+    <i>i</i>
+
+
+
+
+
+  </div><!-- ex5 -->
+  <h3>:nth-child(n)(전체속성 중의),:nth_of-child(n),nth-last-child(n),:nth-of-type(n)(같은 속성의 n번째)</h3>
+<p>모든 요소를 기준으로 몇번째를 의미</p>
+<div class="ex6">
+  <span>span1</span>
+  <span>span2</span>
+  <small>small1</small>
+  <small>small2</small>
+</div><!-- ex6 -->
+
+<h3>:nth-child(o,e),nth-of-type(o,e)</h3>
+<p>odd:홀수, even:짝수</p>
+<div class="ex7"> 
+<span>span1</span>
+<span>span2</span>
+<span>span3</span>
+<span>span4</span>
+<br>
+<em>em1</em>
+<em>em2</em>
+<em>em3</em>
+<em>em4</em>
+
+</div><!-- ex7 -->
+
+<h3>:nth-child(an+b),:nth-of-type(An+B),nth-last-child(an+b),:nth-last-of-type(An+B;뒤에서 부터 찾는다)</h3>
+<p>ex)3n+1 ->n=0:1,n1:4 , n2:7 <br>
+  4n(n은 곧 등차)+2(시작하는 수) <br>
+  ex)1,5,9,13..4n+1<br>
+  8,11,14,17..
+</p>
+<div class="ex8">
+<b>bold1</b>
+<b>bold2</b>
+<b>bold3</b> 
+<b>bold4</b>
+<b>bold5</b> 
+
+<i>italic1</i>.
+<i>italic2</i>
+<i>italic3</i>.
+<i>italic4</i>
+<i>italic5</i>.
+
+
+
+
+
+</div><!-- ex8 -->
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<hr>
+<h2>속성선택자</h2>
+<h3>선택자[속성]</h3>
+<p>해당속성을 포함한 선택자</p>
+ <h3>선택자[속성="속성값"</h3>
+  <p>해당속성과 속성값이 일치하는 요소</p>
+  <div class="ex9">
+    <a href="#">a</a>
+    <a href="#">a</a>
+    <a href="naver">a</a>
+    <a href="google">a</a>
+    
+    
+
+
+
+
+
+  </div>
+  <hr>
+
+  <span class="quiz">
+    <b>1</b> <!-- 노란박스에 마우스가 올라가면(:hover) 그안에 홀수(odd)번재 b요소 밑줄 생김.>=노란박스:  -->
+    <b>2</b>
+    <b>3</b> <!-- 밑줄 뒤 변색 -->
+    <b>4</b>
+    
+
+  </span>
+  <!-- 
+  1. -0+5=5
+  2.-1+5=4
+  3.-2+5=3
+  4.-3+5=2
+  5.-4+5=1
+  6.-5+5=0
+  7.-6+5=-1
+  8.-7+5=-2
+ nth-child(-n+선택하고 싶은 갯수)
+  -->
+
+ 
+  
+</body>
+</html>

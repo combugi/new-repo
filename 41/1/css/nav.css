@@ -1,0 +1,52 @@
+
+li{
+  list-style: none;
+}
+
+
+
+
+
+
+
+
+.listbox{
+  width: 1000px;
+  height: 40px;
+  background:grey;
+  margin: 0 auto;
+  
+ 
+  
+ 
+}
+.listbox>ul{
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  align-items:center;
+  justify-content: center;
+ 
+
+ 
+  
+  
+  
+  
+}
+
+.listbox li a{
+  display: block;
+  height: 100%;
+  margin: 0px 20px;
+  background-color: red;
+  color: antiquewhite;
+  
+ 
+ 
+}
+.listbox>ul>li>a:hover{
+  background-color: black;
+ color: antiquewhite;
+
+}

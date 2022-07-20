@@ -1,0 +1,127 @@
+header{
+  position: relative;
+  z-index: 100;
+  margin:0 auto;
+  width: 95%;
+  max-width: 1200px;
+}
+header nav.family{
+  height: 30px;
+  background: #EEE;
+}
+header nav.family ul{
+  display: flex;
+  justify-content: flex-end;
+  height: inherit;
+}
+header nav.family ul li a{
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color:#FFF;
+}
+header nav.family ul li:nth-child(even) a{
+  background: #000;
+}
+header nav.family ul li:nth-child(odd) a{
+  background: #666;
+}
+header nav.family ul li a:hover{
+  background: #FFF;
+  color:#000;
+}
+header div.inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: calc(100% - 30px);
+}
+h1{
+  height: 70%;
+}
+h1 img{
+  height: 100%;
+}
+
+@media screen and (min-width:1000px) {
+  header{
+    height: 100px;
+  }
+  header nav.family ul li{
+    width: 100px;
+  }
+  .gnb-lg{
+    height: 45px;
+  }
+  .gnb-lg ul{
+    display: flex;
+    height: inherit;
+  }
+  .gnb-lg ul li{
+    height: inherit;
+  }
+  .gnb-lg ul li a{
+    display: block;
+    height: inherit;
+    padding: 0 30px;
+    line-height: 45px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  .gnb-lg ul li a:hover{
+    background: #000;
+    color:#FFF;
+  }
+  .gnb-sm , .mbtn{
+    display: none !important;
+  }
+}/* lg */
+
+@media screen and (max-width:1000px) {
+  header{
+    height: 80px;
+  }
+  header nav.family ul li{
+    flex:1;
+  }
+  .mbtn{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border:1px solid #666;
+  }
+  .mbtn .close{
+    display: none;
+  }
+  .mbtn.active .close{
+    display: block;
+  }
+  .mbtn.active .open{
+    display: none;
+  }
+  
+  .gnb-sm{
+    position: absolute;
+    left:0;
+    top:100%;
+    width: 100%;
+  }
+  .gnb-sm ul li a{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    background: #DDD;
+    border-bottom: 1px solid #CCC;
+  }
+  .gnb-sm ul li a:hover{
+    background: #000;
+    color:#FFF;
+  }
+  .gnb-lg,.gnb-sm{
+    display: none;
+  }
+}/* md */

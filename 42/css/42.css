@@ -1,0 +1,40 @@
+.ex1 div,.ex2 div,.ex3 div{
+display: inline-block;
+padding: 20px;
+border: 1px solid black;
+background: wheat;
+}
+/* 토글을 해줄때는 클래스를 준다 */
+.ex5 button.active{
+background: red;
+}
+.ex6 div{
+  display: inline-block;
+  width: 50px;
+height: 50px;
+border: 1px solid blue;}
+.ex6 button .active{
+  background: none;
+}
+.ex8 button{
+  display: block;
+  border: 1px solid black;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid black;
+  text-align: left;
+  background: none;
+  cursor:inherit;
+  background: cadetblue;
+
+
+}
+.ex8 p{
+  display: none;
+}
+
+
+
+
+

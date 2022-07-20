@@ -1,0 +1,148 @@
+.ex1 {
+  width: 980px;
+  border: 1px solid saddlebrown;
+  margin: 30px auto;
+  padding-top: 20px;
+
+}
+
+/* ex1 */
+.ex1::after {
+  content: '';
+  /* clear fix */
+  display: block;
+  clear: both;
+}
+
+/* ::은 가상 엘리먼트로 빈공간에 가상으로 들어 */
+
+.ex1 div {
+  float: left;
+  width: 300px;
+  background-color: darkgoldenrod;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.ex1 div:nth-child(odd) {
+  width: 300px;
+  height: 150px;
+}
+
+.ex1 div:nth-child(even) {
+  width: 300px;
+  height: 300px;
+}
+
+.ex1 div:nth-child(3n+4) {
+  clear: both;
+}
+
+
+.ex2 {
+  border: 2px solid cornflowerblue;
+  width: 720px;
+  margin: 30px auto;
+  padding-top: 30px;
+  text-align: center;
+  line-height: 200px;
+  
+}
+
+.ex2::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+
+.ex2 .box1,
+.box2,
+.box5,
+.box6,
+.box7,
+.box10,
+.box11,
+.box12 {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+}
+
+.ex2 .box3 {
+  width: 260px;
+  height: 200px;
+  background-color: cadetblue;
+}
+
+.ex2 .box4 {
+  width: 200px;
+  height: 430px;
+  background-color: violet;
+}
+
+.ex2 .box8,
+.box9 {
+  width: 430px;
+  height: 430px;
+  background-color: coral;
+  
+}
+
+
+.ex2 .box1,
+.box2 {
+  float: left;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.ex2 .box3 {
+  clear: both;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.ex2 .box4 {
+  clear: both;
+}
+
+.ex2 .box4,
+.box5,
+.box6,.box7{
+float:right;
+margin-right: 30px;
+margin-bottom: 30px;
+}
+.ex2 .box8{
+  float: left;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+.ex2 .box9{
+  float: right;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.ex2 .box10{
+  clear: both;
+
+}
+.ex2 .box10{
+  float: left;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+.ex2 .box11
+{float: right;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.ex2 .box12{
+  clear: both;
+}
+.ex2 .box12{
+  float: left;
+  margin-left:260px ;
+  margin-bottom: 30px;
+}
+

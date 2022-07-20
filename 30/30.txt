@@ -1,0 +1,1 @@
+js  조건문,if,else,else if,비교 연산자

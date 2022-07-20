@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 이하부분 작성------------------------------ */
+.container1 {
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-between;
+  margin: 10px auto;
+  width: 1000px;
+  padding: 20px;
+
+  border: 1px solid black;
+}
+.container1>div{
+  padding: 20px;
+  width: 20%;
+  border: 1px solid black;
+  
+  
+}
+.container1>div>p{
+  margin: 20px 0;
+}
+
+
+
+
+
+
+.container2{display: flex;
+  width: 1000px;
+padding: 20px;
+border: 1px solid black;
+flex-direction:row;
+justify-content: space-between;
+flex-wrap: wrap;
+margin: 0 auto;
+
+
+
+
+
+}
+.container2>div{display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid black;
+  width: 45%;
+  margin: 40px 0;
+ 
+  padding: 20px;
+}
+.container2>div>h3{
+  padding: 10px;
+  background-color:grey;
+}
+
+.container2>div:nth-child(2)~div{
+  margin-bottom: 0;
+  
+}
+.container2>div>p{
+  flex:1px;
+  padding: 10px;
+  margin: 20px 0;
+  background-color:darkgray;
+}
+.container2>div>a{
+  padding: 10px;
+  display: block;
+  color: aliceblue;
+  background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container3{display: flex;
+
+  width: 1000px;
+  padding: 20px;
+  border: 1px solid black;
+  margin: 0 auto;
+  
+  flex-direction:row;
+justify-content: center;
+
+  
+ 
+ 
+}
+
+.container3>div{display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  padding: 20px;
+  border: 1px solid black;
+  
+  
+}
+
+.container3>div>h3{
+  background-color: gray;
+ text-align: center;
+
+}
+
+.container3>div>p{
+  flex: 1;
+
+  margin: 20px 0;
+  background-color: darkgray;
+  text-align: center;
+}
+
+.container3>div>a{display: block;
+  background-color: black;
+  color: aliceblue;
+  text-align: center;
+}
+
+
+
+.container3>div>div{
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  
+  
+}
+
+.container3>div>div:nth-child(1){
+  margin-bottom: 20px;
+}
+
+
+
+
+.container3>div>div>h3{
+  background-color: gray;
+  text-align: center;
+ 
+
+}
+
+.container3>div>div>p{
+  flex: 1;
+
+  margin: 20px 0;
+  background-color: darkgray;
+  text-align: center;
+}
+
+.container3>div>div>a{display: block;
+  background-color: black;
+  color: aliceblue;
+  text-align: center;
+}

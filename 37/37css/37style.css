@@ -1,0 +1,253 @@
+.abs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+
+  width: 200px;
+  height: 200px;
+  background: cadetblue;
+}
+
+.abs>div {
+  width: 30px;
+  height: 30px;
+  background: red;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.fix {
+  width: 100px;
+  height: 100px;
+
+  background: blue;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-right: 25%;
+
+}
+
+.container {
+  width: 800px;
+  margin: 10px auto;
+
+}
+
+.container p {
+  position: relative;
+  border: solid 1px black;
+  padding: 10px;
+}
+
+.container p::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: red;
+  left: -5px;
+  top: -5px;
+
+
+}
+
+.ex {
+  width: 300px;
+  border: 1px solid black;
+  margin: 0 auto;
+  padding: 30px;
+  position: relative;
+}
+
+.ex div:first-child {
+  position: absolute;
+  background: red;
+  top: 0;
+}
+
+.ex div:last-child {
+  position: relative;
+  background: blue;
+  width: 70px;
+  margin: 0 auto;
+}
+
+.ax1 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  right: 50%;
+  margin-top: 50px;
+}
+
+.ax2 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: skyblue;
+  margin-top: 180px;
+  right: 40%;
+
+}
+
+.ax3 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+  margin-top: 350px;
+  right: 30%;
+}
+
+
+
+.ax1 div:first-child {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  right: 0;
+}
+
+.ax1 div:last-child {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  bottom: 0;
+}
+
+.ax2 div:first-child {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  right: 0;
+}
+
+.ax2 div:last-child {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  bottom: 0;
+}
+
+.ax3 div:first-child {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  right: 0;
+}
+
+.ax3 div:last-child {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  bottom: 0;
+}
+
+
+
+
+
+.frame {
+  position: absolute;
+  width: 2500px;
+  height: 710px;
+  border: 1px solid snow;
+
+}
+
+.frame p {
+  position: relative;
+  top: 0;
+  margin-left: 20px;
+  padding: 20px;
+  
+  
+
+}
+
+.ll {
+  position: fixed;
+  width: 10%;
+  height: 100%;
+  background: red;
+  left: -170px;
+  top: 0
+}
+
+.lr {
+  position: fixed;
+  width: 10%;
+  height: 100%;
+  background: red;
+  right: -170px;
+  top: 0
+}
+
+.lt {
+  position: fixed;
+  width: 100%;
+  height: 10%;
+  background: red;
+  top: -70px;
+}
+
+.lb {
+  position: fixed;
+  width: 100%;
+  height: 10%;
+  background: red;
+  bottom: -70px;
+}
+
+.sb1 {
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  background: red;
+  top: 0;
+  left: 0;
+}
+
+.sb2 {
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  background: red;
+  top: 0;
+  right: 0;
+}
+
+.sb3 {
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  background: red;
+  bottom: 0;
+  left: 0;
+
+}
+
+.sb4 {
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  background: red;
+  right: 0;
+  bottom: 0;
+}
+
+
+
+/* sb 45,45 w가로 wid: 1480 h:20 w 세로 h:660 wid:20 */
+/* 화면이 차보이게 줄때는 %를 준다 */
