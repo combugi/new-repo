@@ -1,0 +1,62 @@
+.container-section{
+  display: flex;
+  height: 100%;
+}
+.container-section section{
+  flex: 1;
+  
+}
+.container-section .white svg{
+  position: absolute;
+  
+ 
+}
+.container-section .white svg path{
+
+}
+.container-section .white svg path .삼각형{
+ display: none;
+}
+.container-section .white{
+  position: relative;
+ background: #eee;
+}
+.container-section .black{
+ background: #000;
+}
+@media screen and (orientation:landscape){
+  .container-section{
+    flex-direction: row;
+  }
+  .container-section:nth-child(even){
+    flex-direction: row-reverse;
+  }
+  .container-section .white svg{
+    left: 100%;
+    height: 100%;
+  }
+  .container-section:nth-child(odd) .white svg{
+    left: 100%;
+  }
+  .container-section:nth-child(even) .white svg{
+    right: 100%;
+    transform: scaleX(-1);
+  }
+  .container-section .white svg.port{
+    display: none;
+  }
+}
+@media screen and (orientation:portrait) {
+  .container-section{
+    flex-direction: column;
+  }
+  .container-section .white svg{
+    width: 100%;
+    top: 100%;
+    
+  }
+  .container-section .white svg .land{
+    display: none;
+  }
+
+}

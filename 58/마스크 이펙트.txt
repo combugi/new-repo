@@ -1,0 +1,4 @@
+css)mask 효과
+img mask
+clip-path
+돋보기 효과

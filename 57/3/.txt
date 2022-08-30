@@ -1,0 +1,1 @@
+scroll과sticky 접목하기

@@ -1,0 +1,11 @@
+body {
+  background: blue;
+}
+
+div {
+  border: 2px solid salmon;
+}
+div span {
+  width: 40px;
+  background: red;
+}

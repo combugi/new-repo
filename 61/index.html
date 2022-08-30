@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous"> 
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/test.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>scss 전처리기</h1>
+  <ul class="desc">
+    <li>자바스크립트파일로 작성된 css문법을 css파일로 파싱하는 형태</li>
+    <li>사전에 개발 환경을 구축해야 함</li>
+    <li>작성은 scss ,연결은 css </li>
+    <li>선택자의 접근이 간단해진다.</li>
+    <li>&선택자:부모선택자(&를 포함한 중괄호의 선택자를 의미한다.)</li>
+    <li>
+      scss의 특별한 문법 <br>
+      - 선택자 중괄호 안에서 미디어쿼리 작성 가능 <br>
+      -rgba('green,0.8가능하다.')
+    </li>
+    <li>
+      일반 css 변수 문법 예시 <br>
+      <pre>
+              <code>
+            :root{
+        --main-color:red;
+      }
+      body{
+        color:var(--main-color);
+      } 
+      css 일반 문법
+      </code>
+      </pre>
+      scss 변수 사용 예시 <br>
+      <pre>
+            <code>
+      $main-color:rgba(skyblue 0.4);
+      body{
+      color: {$main-color};
+        <li>
+          scss의 변수나 mixin은 별도의 파일로 제작후 import를 이용해 탬플릿 형태로 구조화함 
+        </li>
+        <li>
+          !주의:scss의 변수나 mixin은 수정할 경우,해당변수나 mixin을 사용하는 모든 css파일을 컴파일링 해야한다. <br>
+          팀?:css변수형태를 사용하길 권장
+        </li>
+        <li>
+          문자사이에서 변수를 출력하고 싶은경우 <br>  
+          예시:
+          <pre>
+            $size 10
+            body{
+              font-size:#{$size px ;font-size10px}
+            }
+
+          </pre>
+
+    </li>
+    <li>
+      @mixin , @include <br>
+      목적:반복적이고 복잡한 css를 효율적으로 수정관리가 용이 <br>
+      특징(인자) : 파라미터를 이용해서 다양한값을 제어 할수 있다 <br>
+      <pre>
+        -예시 @micin center-width($w,$max-w){
+          width:$w;
+          max-width:$max-w;
+          margin:0 auto 
+        }
+        div{
+          @include center-width(95%,1200px);
+        }
+      </pre>
+      
+    </li>
+    </code>
+    </pre>
+
+
+
+
+    </li>
+    <li>
+      반복문 <br>
+      <li>
+        for구문(through,to)
+        <pre>
+          .ex2{
+            margin: 50px 0;
+            text-align: center; 
+            span{
+            display: inline-block;
+            animation: jump 1s infinite;
+              @for $i from 1 through 6{
+                &:nth-child(#{$i}){
+                  animation-delay: #{($i-1)*0.2}s;
+                }
+              } 
+             }
+          }
+        </pre>
+      </li>
+      <li>
+          each구문,객체와 같이 사용할때...
+      </li>
+    </li>
+  </ul>
+  믹스인
+  for,each,
+
+
+  <hr>
+  <div class="ex1">
+    <div>div</div>
+    <div>div</div>
+    <div class="center-width">div</div>
+    <section>section</section>
+    <section>section</section>
+    <section class="center-width">section</section>
+    <p>paragraph</p>
+    <p>paragraph</p>
+    <p class="center-width">paragraph</p>
+    <div>div</div>
+    <div>div</div>
+    <div class="center-width">div</div>
+    <section>section</section>
+    <section>section</section>
+    <section class="center-width">section</section>
+    <p>paragraph</p>
+    <p>paragraph</p>
+    <p class="center-width">paragraph</p>
+  </div>
+ <hr>
+ <div class="">
+  <span class="icon-font">span1</span>
+  <span class="icon-font">span2</span>
+  <span class="icon-font">span3</span>
+  <span class="icon-font">span4</span>
+  <span class="icon-font">span5</span> 
+ </div>
+ <hr>
+ <div class="ex2">
+  <span>1</span>
+  <span>2</span>
+  <span>3</span>
+  <span>4</span>
+  <span>5</span>
+  <span>6</span>
+ </div><!-- ex2---------- -->
+ <hr>
+ <div class="ex3">
+  <span>성명</span>
+  <span>집전화번호</span>
+  <span>주소</span>
+  <span>휴대번호</span>
+ </div>
+</body>
+
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+  <script src="./js/script.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <svg class="svg1">
+    <circle /> <!-- circle은 뒤에 반드시 슬래시 해줘야한다 -->
+  </svg>
+  <hr>
+  <svg class="svg2" viewBox="0 0 200 200">
+    <path class="star" fill="none" stroke="#231f20" stroke-miterlimit="10" d="M100,70.23l29.39-15.45l-5.61,32.73l23.78,23.18l-32.86,4.77L100,145.23l-14.69-29.77l-32.86-4.77L76.22,87.5	l-5.61-32.73L100,70.23z"/>
+  </svg>
+  <hr>
+  <!-- object-fit
+  cover:빈틈없이 꽉
+  contain : 쏙 들어가게 함
+
+  svg 문법 안에 반응형에 따라 이미지를 맞추고싶을때 참고할 용어
+  preserveAspectRatio :이미지가 짜브되는걸 막기위해 쓰는 속성
+  center center:xMidYMid
+  slice:cover
+  meet :contain
+  
+
+-->
+  <div class="svg3-container"> 
+    <svg viewBox="0 0 200 200" preserveAspectRatio="xMidYMid meet">
+    <path class="star" fill="none" stroke="#231f20" stroke-miterlimit="10" d="M100,70.23l29.39-15.45l-5.61,32.73l23.78,23.18l-32.86,4.77L100,145.23l-14.69-29.77l-32.86-4.77L76.22,87.5	l-5.61-32.73L100,70.23z"/>
+  </svg>
+</div>
+ 
+    
+</body>
+
+</html>

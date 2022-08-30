@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <figure>
+  <img src="./img/차1.png" class="tea">
+  <img src="./img/찻잔1.png" class="cup">
+  </figure>
+  <svg>
+
+    <filter id="filter">
+    
+    <feTurbulence id="water" numOctaves="5" seed="3" baseFrequency="0.02 0.5" />
+    
+    <feDisplacementMap scale="10" in="SourceGraphic" />
+    
+    <animate href="#water" attributeName="baseFrequency" keyTimes="0;0.5;1"
+    
+    values="0.002;0.008;0.002" dur="1s" repeatCount="indefinite"/>
+    
+    </filter>
+    
+    </svg>
+</body>
+</html>

@@ -1,0 +1,18 @@
+figure{
+margin: 50px auto;
+width: 98%;
+max-width: 400px;
+}
+figure img{
+  width: 100%;
+}
+figure img.cup{ 
+  position:absolute;
+  top: 0;
+}
+figure img.tea{
+   
+  transform: scale(1.2);
+  filter: url(#filter);
+  
+}

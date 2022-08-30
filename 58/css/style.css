@@ -1,0 +1,76 @@
+figure.img-box{
+  position: relative;
+  margin: 50px auto;
+  width: 90%;
+  max-width:400px;
+ 
+}
+  /*  prefix -webkit- 크롬,사파리,엣지
+  -o- 오페라 브라우저 
+  -moz- 파이어폭스 */
+
+
+/* figure.img-box img{
+  display: block;
+  width: 100%;
+  -webkit-mask-image:url(../img/maskcircle.png);
+  -webkit-mask-position:contain;
+  -webkit-mask-size: 100px 100px;
+  -webkit-mask-repeat: no-repeat;
+
+  mask-image: url(../img/maskcircle.png);
+  mask-size: contain;
+  mask-position: center center;
+  mask-repeat: no-repeat;
+
+ 
+  
+}  */
+/* 귀찮아도 두번적어야한다... */
+figure.img-box img.color{
+  position: absolute;
+  top:0;
+
+
+
+  -webkit-mask-image:url(../img/maskcircle.png);
+  -webkit-mask-position:contain;
+  -webkit-mask-size: 100px 100px;
+  -webkit-mask-repeat: no-repeat;
+  
+  transition: -webkit-mask-image 5s;
+
+}
+figure.img-box img.grey{
+  filter: grayscale(100%) brightness(90%);
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+.zoom{
+  position: relative;
+  overflow: hidden;
+  margin: 50px auto;
+  width: 90%;
+  max-width: 500px;
+  border: 1px solid salmon;
+}
+.zoom img.small{
+  display: block;
+  width: 100%;
+}
+.zoom img.big{
+  position: absolute;
+  width: 120%;
+  left: -10%;
+  top: -10%;
+
+  -webkit-mask-image: url(../img/maskcircle.png);
+  -webkit-mask-size:200px 200px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+
+  mask-image: url(../img/maskcircle.png);
+  mask-size:200px 200px;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+}

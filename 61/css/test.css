@@ -1,0 +1,38 @@
+.ex2 {
+  margin: 50px 0;
+  text-align: center;
+}
+.ex2 span {
+  display: inline-block;
+  animation: jump 1s infinite;
+}
+.ex2 span:nth-child(1) {
+  animation-delay: 0.4s;
+}
+.ex2 span:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.ex2 span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.ex2 span:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.ex2 span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.ex2 span:nth-child(6) {
+  animation-delay: 0.4s;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}

@@ -1,0 +1,24 @@
+figure{
+  display: block;
+  margin: 0 auto;
+}
+figure.svg-carousel{
+  width: 80%;
+  max-width: 600px;
+
+}
+figure.svg-carousel svg{
+  display: block;
+  width: 100%; /* viewbox가 있으므로 높이를 안줘도 된다... */
+}
+figure.svg-carousel svg path:not(.line11,.line21,.line31){
+ display: none;
+ 
+}
+figure.svg-carousel svg image{
+  transition: opacit 1s;
+  opacity: 0.1;
+}  
+figure.svg-carousel svg image:not(.img1){
+  display: none;
+}

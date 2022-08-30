@@ -1,0 +1,38 @@
+.svg1{
+  width: 90%;
+margin: 50px auto;
+
+max-width: 400px;
+}
+.svg1 .guide{
+ fill:none;
+ stroke: blue;
+}
+.section2{
+  position: relative;
+  background: #eee;
+}
+.svg2 {
+  position: absolute;
+  top:0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+}
+.svg2 path{
+  fill:none;
+  stroke:orange;
+}
+.svg2 image.pen{
+     x: 0;
+      y: 0.896;
+      
+      width: 10.083; 
+      height: 14.051;
+}
+.svg2 image .pen{
+    offset-path:path("M150.52,7.23c-41.29,226.45,0,252.9,0,252.9s157.42-52.9,75.48,49.03s-74.84,110.32-123.87,100	s-85.81,29.03-62.58,59.35C62.77,498.84,198.9,491.1,198.9,491.1s58.71-10.97-3.87,24.52"); 
+    offset-distance: 35%;
+    offset-rotate: 0deg;
+
+}

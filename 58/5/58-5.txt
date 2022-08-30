@@ -1,0 +1,4 @@
+clip-path (좌우 분할 섹션전환효과) 
+active 없이 구현
+정정..
+glitch 효과

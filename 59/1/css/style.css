@@ -1,0 +1,42 @@
+.svg1{
+  display: block;
+  margin: 30px auto;
+  width: 200px;
+  height: 200px;
+  border: 1px solid blue;
+}
+
+.svg1 circle{
+cx:100;
+cy:100;
+r:50;
+stroke:pink;
+stroke-width:4px; 
+fill:none  /* svg 안에서의 용어의 fill이 background 이기에 background 단어를 쓰면 안된다. */
+
+}
+.svg2{
+  width: 90%;
+  max-width: 400px;
+  display: block;
+  margin: 30px auto;
+  border: 1px solid blue;
+}
+.svg2 .star{
+  stroke: blue;
+  stroke-width: 3px;
+}
+.svg3-container{
+  margin: 30px auto;
+  width: 500px;
+  height: 200px;
+  border: 1px solid red;
+  fill:aqua;
+  
+}
+.svg3-container svg{
+  display: block;
+  width: 100%;
+  height: 100%;
+ 
+}

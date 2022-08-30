@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/* 여기서 색상을 바꿔도 적용이 안된다.주로 css의변수를 사용한다 */
+/* 여기서 고치면 다른 scss도 저장해야한다. */
+/* mixin에는 가상엘리먼트를 못쓴다 */
+body {
+  color: rgb(41, 72, 100);
+}
+
+h1 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+ul.desc li {
+  margin-left: 10px;
+  color: rgba(255, 192, 203, 0.5);
+}
+ul.desc li:hover {
+  text-decoration: underline;
+}
+ul.desc li::before {
+  content: "-";
+}
+
+.ex1 *:nth-of-type(2) {
+  width: 95%;
+  max-width: 1200px;
+  margin: 10px auto;
+  border: 1px solid red;
+}
+
+.ex2 span::before {
+  /* content: "\f0c9"; */
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+/* .ex2 span::before{
+
+  content: "\f0c9";
+} */
+/* :root{
+  --main-color:red;
+}
+body{
+  color:var(--sub-color);
+} 
+css 일반 문법 */

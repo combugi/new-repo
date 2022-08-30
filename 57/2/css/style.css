@@ -1,0 +1,34 @@
+section{
+  padding: 100px 0;
+ 
+  border: 1px solid black;
+}
+.scrollspy{
+  position: fixed;
+  z-index: 90;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 200px;
+  background: green;
+}
+.progress{
+  /* height: 0%; */
+  background: yellow;
+
+}
+.scrollspy  button{
+position: absolute;
+/* top: 100%; */
+left: 50%;
+transform: translate(-50%,-50% );
+width: 10px;
+height: 10px;
+background: #ccc;
+border-radius: 50%;
+opacity: 20%;
+}
+.scrollspy  button.active{
+  background: red;
+}

@@ -1,0 +1,55 @@
+h1{
+  position: relative;
+  font-size: 5em;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  border: 1px solid salmon;
+
+}
+h1::after,h1::before{
+  content:attr(data-text);
+  position: absolute;
+  left: 0;
+}
+h1::after{
+  color: red;
+  animation: glitch 0.2s infinite ;
+}
+h1::before{
+  color: blue;
+  animation: glitch 0.15s infinite ;
+}
+h1 span{
+  position: relative;
+  z-index: 1;
+}
+@keyframes glitch{
+  0%{
+    transform: translateX(1%);
+    clip-path: polygon(0 0,100% 0,100% 50%,0 50%);
+  }
+  20%{
+    transform: translateX(-1%);
+    clip-path: polygon(0 10%,100% 0,100% 60%,0 60%);
+  }
+  40%{
+    transform: translateX(3%);
+    clip-path: polygon(0 20%,100% 0,100% 70%,0 70%);
+  }
+  60%{
+    transform: translateX(-3%);
+    clip-path: polygon(0 30%,100% 0,100% 80%,0 80%);
+  }
+  80%{
+    transform: translateX(1%);
+    clip-path: polygon(0 40%,100% 0,100% 90%,0 90%);
+  }
+  100%{
+    transform: translateX(-1%);
+    clip-path: polygon(0 50%,100% 0,100% 100%,0 100%);
+  }
+}
+

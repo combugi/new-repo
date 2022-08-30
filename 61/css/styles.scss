@@ -1,0 +1,45 @@
+
+@import './common.scss';
+
+body{
+  color: $main-color;
+}
+h1{
+  font-size: /* 2em; */ #{$size}px; //변수 형태
+  margin-bottom: 10px;
+
+}
+ul.desc{
+  li{
+    margin-left: 10px;
+    color: rgba(pink,0.5);
+    &:hover{
+      text-decoration: underline;
+    }
+    &::before{
+      content: "";
+      
+    }
+  }// scss 에서의 & 은 가상 선택자를 연결할수 있다.
+ 
+}
+.ex1 *:nth-of-type(2){
+  @include center-width;
+}
+/* .ex2 span{
+  @include icon-font(before,'\f0c9');
+} * 잠시 주석처리 scss @include문법 /
+/* .ex2 span::before{
+  
+  content: "\f0c9";
+} */
+
+
+
+/* :root{
+  --main-color:red;
+}
+body{
+  color:var(--sub-color);
+} 
+css 일반 문법 */

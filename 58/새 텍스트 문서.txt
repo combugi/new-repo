@@ -1,0 +1,3 @@
+css)mask 효과
+img mask
+clip-path

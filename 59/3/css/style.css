@@ -1,0 +1,68 @@
+.section1,.section3{
+  background: #eee;
+}
+.section2{
+  padding: 100px 0;
+  position: relative;
+}
+.section2 ul{
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: 20px auto;
+  max-width: 1200px;
+
+}
+.section2 ul li{
+  z-index: 1;
+  margin: 20px 0;
+  height: 200px;
+  background: #666;
+}
+.section2 svg{
+  /* 스크롤을 전제로 하기에 넓이는 주지말고 높이만 줘야한다  */
+  position: absolute;
+  height: 100%;
+  max-width: 1200px;
+  top:0;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+.section2 .line-lg{
+  transform:translateX(-50%) scaleY(-1);
+}
+.section2 svg path{
+  fill:none;
+  stroke: red;
+  stroke-width:4px;
+  stroke-dasharray: 1px;
+   
+  stroke-dashoffset: 1px; 
+  
+}
+
+@media screen and (min-width:1000px){
+  .section2 ul li{
+    width: 32%;
+  }
+  .line-sm{
+    display: none;
+  }
+}
+@media screen and (min-width:500px) and (max-width:1000px){
+  .section2 ul li{
+    width: 48%;
+  }
+  .line-lg{
+    display: none;
+  }
+}
+@media screen  and (max-width:500px){
+  .section2 ul li{
+    width: 100%;
+  }
+  .line-lg{display: none;}
+}

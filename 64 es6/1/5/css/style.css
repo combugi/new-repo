@@ -1,0 +1,28 @@
+*{
+  margin: 0; padding: 0;
+}
+.container{
+  overflow: hidden;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1400px;
+  height: 100%;
+  background: #000;
+}
+.container img{
+  position: absolute;
+  animation-name: bubble;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+
+}@keyframes bubble{
+  0%{
+    top: 110%;
+  }
+  100%{
+    top: -10%;
+  }
+}

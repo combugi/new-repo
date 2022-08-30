@@ -1,0 +1,123 @@
+/* svg안에서는 %를 쓰면 안됨 */
+.svg1{
+  display: block;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 500px;
+  
+  
+/* width: 200px;
+height: 200px; 반응형에선 이런형식으로 만들면 안됨 */
+}
+.svg1 rect{
+  width: 196px;
+  height: 196px;
+  x:2px;
+  y:2px;
+  stroke: red;
+  stroke-width: 4px;
+  fill: none;
+  stroke-dasharray: 10px;
+  stroke-linecap:butt;
+  animation: dashmotion 50000s infinite linear;
+}
+@keyframes dashmotion{
+  0%{
+    stroke-dashoffset: 0;
+  }
+  100%{
+    stroke-dashoffset: 1000000px;
+  }
+}
+/* ----------------------------------- */
+/* svg안에서는 %를 쓰면 안됨 */
+.svg2-container svg{
+  display: block;
+  width: 100%;
+  
+  
+/* width: 200px;
+height: 200px; 반응형에선 이런형식으로 만들면 안됨 */
+}
+.svg2-container{
+  margin: 30px auto;
+  width: 90%;
+  max-width: 500px;
+}
+.svg2-container svg rect{
+  width: 196px;
+  height: 196px;
+  x:2px;
+  y:2px;
+  stroke: red;
+  stroke-width: 4px;
+  fill: none;
+  stroke-dasharray: 784px; /* 점선의 간격  */
+  stroke-dashoffset:784px; /* 점선을 당기는 효과 */
+  transition: stroke-dashoffset 1s;
+
+}
+
+.svg2-container.active svg rect{
+  stroke-dashoffset: 0;
+}
+/* ---------------------------------------- */
+.svg3-container{
+  margin: 30px auto;
+  width: 90%;
+  max-width: 500px;
+}
+.svg3-container svg{
+  display: block;
+  width: 100%;
+}
+.svg3-container svg circle{
+  stroke-dasharray: 1;
+  stroke-dashoffset:1;
+  transition: stroke-dashoffset 1s;
+}
+.svg3-container.active svg circle{
+  stroke-dasharray: 0;
+  
+}
+div.svg4 svg{
+  display: block;
+  margin:0 auto;
+  width:100%;
+}
+div.svg4 svg path{
+  
+  stroke-width: 4px;
+  fill:rgba(0,0,0,0);
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  transition: stroke-dashoffset 10s, fill 3s;
+  transition-delay: 20s;
+}
+div.svg4.active svg path{
+  stroke-dashoffset: 0;
+  fill:rgba(0,0,0,1);
+}
+div.svg5 svg{
+  display: block;
+  width:100%;
+}
+div.svg5 svg path{
+  stroke:green;
+  stroke-width: 4px;
+  fill: none;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: draw 5s infinite linear;
+}
+@keyframes draw{
+  0%{
+    stroke-dashoffset: 1;
+  }
+  50%{
+    stroke-dashoffset: 0;
+  }
+  100%{
+    stroke-dashoffset: -1;
+  }
+}

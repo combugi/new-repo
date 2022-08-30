@@ -1,0 +1,5 @@
+59)svg
+svg viewbox ,preserveAspectRatio
+line drawing
+
+3)점선을 따라서 점이 이동하는 이펙트 주기

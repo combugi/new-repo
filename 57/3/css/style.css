@@ -1,0 +1,31 @@
+.img-container{
+  position: sticky;
+  top:0;
+  margin: 30px auto;
+  width: 95%;
+  max-width: 500px;
+  height: 500px;
+  background: black;
+  border-radius: 10%;
+
+}
+.section1{
+  text-align: center;
+}
+.img-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: none;
+}
+.img-container img:nth-child(1){
+display: block;
+}
+.scr-start{
+  transform: translateY(30px);
+ border: 1px solid red;
+}
+.scr-end{
+  transform: translateY(-30px);
+  border: 1px solid red;
+}
