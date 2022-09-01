@@ -1,0 +1,24 @@
+<script src="https://kit.fontawesome.com/1db539ee0d.js" crossorigin="anonymous"></script>
+
+폰트 어썸-내 계정
+
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+노토 산스(한글); font-family: 'Noto Sans KR', serif;
+
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+몬트쉐릿; font-family: 'Montserrat', sans-serif;
+
+
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+나눔고딕; font-family: 'Nanum Gothic', sans-serif;
+
+
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+나눔명조; font-family: 'Nanum Myeongjo', serif;
+
+<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+모노톤; font-family: 'Monoton', cursive; 

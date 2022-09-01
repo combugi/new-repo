@@ -1,0 +1,2 @@
+ PHP Intelephense 는 vscode extension 파일 설치 그리고 톱니바퀴에 들어가서 
+세팅 파일에 그누보드에 있는 복사 붙여넣기함

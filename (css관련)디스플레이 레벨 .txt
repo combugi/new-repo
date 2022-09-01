@@ -1,0 +1,21 @@
+디스플레이 레벨
+블럭:div,p,
+
+인라인:span,a,i,label,small,storng,em,time,q
+sub,sup,code,kbd,abbr
+
+
+인라인 블록:img,폼요소(button,input,textarea,select),iframe,svg,canvas
+
+
+vertical-align
+top,middle,bottom
+
+block 레벨에서는 사용할 수 없음
+
+line-height
+줄간격을 설정하는 속성이지만, 한줄일 경우 요소의 높이와 동일하게 설정하면 중앙정렬 기능으로 변칙적으로 활용. 요소 안쪽의 글자,인라인 계열에만 적용가능
+
+margin=오로지 블록레벨에만 적용
+margin속성의 auto값을 이용함
+margin속성의 auto값은 인라인,인라인 블록레벨은 적용되지 않는다.

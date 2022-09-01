@@ -1,0 +1,122 @@
+환경설정
+-작업환경 window.essential essentialclassic
+preference(ctrl+k)
+
+-일러스트레이터 만의 vector방식의 특징
+-얼라이싱(깨짐) 현상이 발생하지 않는다
+-파일용량이 적다(사진같은 이미지 제외)
+-도형 오브젝트 위주로 작업이 이루어 진다.
+-도형은 점,선(edge;가상 선),면 으로 이루어진다.
+-도형을 제작할시 선(stroke 눈에 보이는 선) 과 면(shape) 으로 구성  된다
+
+오브젝트의 생성
+-도형툴 선택후 드래그를 이용
+-도형툴 선택후 클릭(세부 옵션 창)
+-주의사항 (선택해제 후 생성,선택 툴클릭후 빈곳 클릭 또는 ctrl 빈곳 클릭)
+
+선택툴
+/전체선택툴(v)
+-오브젝트 전체를 선택
+-복사 alt + 드래그
+-정렬,정돈
+객체를 선택후 move tool을 선택
+
+
+/직접선택툴(a)
+-점,선을 선택
+그룹,언그룹(컨트롤 g 컨트롤 쉬프트 g)
+
+유용한 기능
+●ctrl+y=와이어프레임 보기
+●ctrl+shift+alt+s 다양한 이미지 포멧으로 저장
+●show grid (ctrl+'),snap to grid( ctrl+ shift+')
+●동일한 위치에 객체를 복사 붙여넣기 컨트롤 씨 이후 컨트롤 에프
+●마술봉 동일한 색상과 스트록 선택
+●선일 경우는 전체선택툴로 선택후 delete를 하면 반절된다
+
+
+■펜기능(p)
+  
+●드로잉 도구
+-클릭을 직선 오브젝트를 생성
+-드래그를 이용해서 곡선 오브젝트를 생성
+-새로운 드로잉 시작시 컨트롤 키를 이용해 빈곳 클릭
+●오브젝트 편집
+-점 위를 클릭:점을 제거(직접선택툴로 점을 제거시에는 점과 연결된 선까지 제거)
+-선 위를 클릭:점을 생성
+-alt+점클릭:베이지어 제거
+-alt+점위에서 드래그:베이지어 생성
+-펜툴 사용시 ctrl키를 누르고 있는 동안은 직접선택툴와 동일한기능
+
+■shapemode와 pathfinder(ctrl+shift+f9)
+	-객체를 선택후 
+●shapemode
+-두개 이상의 오브잭트를 최종하나로 만든다
+
+-Unite(객체를 하나로 합친다)
+-minus front(상단의 객체로 아래쪽 객체를 뚫어낸다.)
+
+●pathfinder
+-오브젝트를 겹치는 영역을 기준으로 쪼갠다
+-divide후 ungroup
+-pathfinder 설정메뉴에서 옵션 두개를 체크
+-path와 path는 적용 안됨
+-shape과 path를 이용할 경유 path과 shape을 관통해야함.
+
+■Typetool
+-글자를 이용해 편집하기 위해서는  우클릭 후 create outline(텍스트를 선택 후)
+
+■오브젝트 편집요령
+/주의사항
+-최종완성본은 면 (shape)으로 전환해야 한다
+-오브젝트를 생성시 선,면 의 계획을 먼저 세워야한다.
+-수평 혹은 수직으로 객체를 생성후 각도를 편집한다.
+
+●object/path/outline stroke
+-stroke형태를 shape로 전환
+
+
+●object/path/offset path
+-stroke형태를 shape로 전환
+
+●회전툴(r)
+오브젝트 전체를회전시 전체선택(v)툴을 이용해 선택한다
+
+●가위툴(siccsor ,c)
+
+
+●스케일 (scale,S)
+-반대칭 형태 제작시 유용(점을 선택후 스케일 )
+
+●stroke pallete(컨트롤+f10)
+-cap:선의 끝을 동그랗게
+-corner:선의 꺾이는 부분을  둥그랗게 설정
+
+●effect 메뉴
+-1)effect 주의사항:적용된 효과를 수정편집시 반드시apperance palleet(shift+f6)을 이용할것 
+-2)동일한 효과를 두번 적용하면 안됨!
+-3)pathfinder의 divide를 적용하기전 object의 expend를 클릭한다.
+
+-style lize/round coner :
+1)꺾이는 부분을 동그랗게 설정
+2)끊어진 점에는 적용되지 않는다.
+
+transform again(ctrl+d)
+마지막에 변형된 설정을 변경한다
+●effect/3d효과/classic
+적용된 이펙트를 수정,편집시 appreance(shift+f6) 를 이용할것
+추가로 
+●extrude
+-perspective:원근감 설정
+-depth:돌출의양
+●revolve
+-왼쪽축을 기준으로 단면을 회전한다.
+-tip:선으로 단면을 제작할때 효과가 좋다.
+
+■블렌딩은 혼자..
+
+■마스크 혼자
+
+■심볼  혼자 
+
+■그라디언트 혼자
