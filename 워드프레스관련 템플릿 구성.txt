@@ -1,0 +1,115 @@
+홈 템플릿
+페이지 템플릿(수정의 빈도가 적고,제작에 기술이 요구되는 컨텐츠)
+카테고리 템플릿(수정의 빈도가 많거나 세부내용이 컨텐츠의 변동이 많은 경우)
+싱글 템플릿(글들의 목록)
+
+404
+검색 템플릿
+
+개인로컬 워드프레스 주소에(127.0.0.1)
+고유주소 카테고리 키워드랑 미디어 쪽에서 700으로 맞추기
+
+add_theme_support( 'post-thumbnails' );
+워드프레스 글 분류에 특성이미지 칸 활성화
+
+meta box io 플러그인 설치  플러그 인 코드 형식은 그누보드 웹 수업 자료실 참고
+
+add_filter( 'rwmb_meta_boxes', 'your_prefix_meta_boxes' );
+
+function your_prefix_meta_boxes( $meta_boxes ) {
+
+  $meta_boxes[] = array(
+
+    'title'      => '포트폴리오정보',
+
+    'post_types' => 'post',
+
+    'fields'     => array(
+
+      array(
+
+      'id'   => 'date',
+
+      'name' => '날짜',
+
+      'type' => 'text',
+
+      ),
+
+      array(
+
+        'id'   => 'client',
+
+        'name' => '고객명',
+
+        'type' => 'text',
+
+      ),  
+
+      array(
+
+        'id'   => 'service',
+
+        'name' => '분야',
+
+        'type' => 'text',
+
+      ),
+
+      array(
+
+        'id'   => 'overview',
+
+        'name' => '설명',
+
+        'type' => 'textarea',
+
+      ),
+
+    ),
+
+  );
+
+  return $meta_boxes;
+
+}
+function.php에 복사붙여넣기 하기
+
+
+
+0817
+
+★★ 메뉴 제작★★
+
+-functions.php 내용추가
+
+register_nav_menus( array(
+
+  'menu' => 'menu',
+
+));
+개인 로컬 주소에 워드 프레스 로그인 뒤워드프레스 대쉬보드에 메뉴에 
+menu체크를 꼭한다음에 메뉴항목들을 추가하기
+
+
+
+
+./은   상대경로
+ /은 루트폴더(도메인 기반;최상위)절대경로
+
+
+
+★★워드프레스 경로 및 제목 출력 함수★★
+
+<?php bloginfo('url'); ?> //홈 url
+
+<?php bloginfo('template_directory'); ?> //테마 url
+
+<?php bloginfo('name'); ?>/사이트제목출력
+
+
+0818
+관리자 모드로 로그인하면 본문에 마진이 발생   <?php wp_head(); ?>  <!-- 워드프레스 초기 설정 제거 -->
+meta태그 아래에 위치하고 scss에 margin: 0 !important를 넣어준다
+
+icon font ::before gkdahr
