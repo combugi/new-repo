@@ -128,7 +128,7 @@ $(function () {
     $(".ex7 .nameadd").click(function(){
       $(".ex7 .result").empty()
       for(i=0; i<=arr7.length-1; i++){
-        $(".ex7 .result").push(arr7)
+        $(".ex7 .result").append(`${arr7.length[i]}`)
       }
     })
 
@@ -152,9 +152,9 @@ $(function () {
   ]
   $(".ex8 button").click(function () {
     $(".ex8 .result").empty()
-    for (i = 0; i < arr8.length - 1; i++) {
+    for (i = 0; i <= arr8.length - 1; i++) {
       $(".ex8 .result").append(`<div></div>`)
-      for (j = 0; j < arr8[i].length - 1; j++) {
+      for (j = 0; j <= arr8[i].length - 1; j++) {
         $(".ex8 .result").append(`<b>${arr8[i][j]}</b>`)
       }
 

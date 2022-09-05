@@ -1,0 +1,48 @@
+/* let btn1=document.getElementById("btn1")
+btn1.addEventListener("click",function(){
+console.log("클릭");  
+})
+
+document.getElementById("btn1").addEventListener("click",function(){
+  console.log("클릭했습니다.")
+})
+ */
+/* let btnArr = document.getElementsByClassName("btn1")//[btn1,btn2,btn3]
+btnArrlength = btnArr.length//3
+
+for(let i=0; i<btnArrlength; i++){
+  btnArr[i].addEventListener('click',function(){
+    console.log("클릭했습니다");
+  })
+}
+ */
+/* let btnArr = document.getElementsByClassName("btn1") //유사배열
+btnArr = Array.from(btnArr) //유사배열을 실제배열로 바꾸는 코드;foreach형태는 실제배열 형태에서만 작동된다.
+btnArr.forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    console.log("클릭");
+  })
+}) */
+
+/* #홍길동.btn, #아무개.btn
+document.getElementById("홍길동") ->홍길동 요소
+document.getElementsByClassName("btn") ->[홍길동 요소,아무개 요소] 
+
+
+id로 찾으면 요소를 하나 찾게된다.
+클래스 로 찾으면 요소를 다 찾게되고 배열로 나온다
+*/
+
+
+/* let btnArr = document.querySelectorAll(".ex2 button")
+btnArr.forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    console.log("클릭")
+  })
+}) */
+
+/* document.querySelectorAll(".ex3 button").forEach(function(a){
+  a.addEventListner("click",function(e){
+    e.currentTarget.classList.add("active")//target,qurenttarget
+  })//click  
+})//foreach */
