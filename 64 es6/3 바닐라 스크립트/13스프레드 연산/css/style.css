@@ -1,0 +1,14 @@
+.ex3 button.active,
+.ex4 button.active,
+.ex5 button.active{
+  color: yellow;
+}
+.ex6 div{
+  display: inline-block;
+  border: 1px solid black;
+  padding: 20px;
+  background: #eee;
+}
+.ex6 div.active{
+  background: red;
+}
