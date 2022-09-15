@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/canvas.css">
+  <script src="https://kit.fontawesome.com/1db539ee0d.js" crossorigin="anonymous"></script>
   <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
   <script src="./js/script.js"></script>
   <title>Document</title>
@@ -19,14 +20,15 @@
         <ul>
           <li><img src="./img/actionrabbit.jpg" ></li>
           <li>portfolio</li>
-          <li>2022.09</li>
+          <li>2022 <br>  09</li>
         </ul>
         <hr>
         <ol>
-          <li>디스플레이 레벨</li> <br>
-          <li>마진과 패딩</li><br>
-          <li>포토샵</li><br>
-          <li>일러스트레이터</li><br>
+          <li><h3>HTML</h3><i class="fa-regular fa-rectangle-list"></i></li> <br>
+          <li><h3>SCSS</h3><i class="fa-regular fa-square"></i></li><br>
+          <li><h3>Js</h3><i class="fa-brands fa-js"></i></li><br>
+          <li><h3>PS</h3><i class="fa-solid fa-wand-magic-sparkles"></i></li><br>
+          <li><h3>IL</h3><i class="fa-solid fa-bezier-curve"></i></li><br>
         </ol>
       </section>
     </main>

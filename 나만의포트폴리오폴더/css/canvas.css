@@ -1,10 +1,13 @@
+body {
+  background: var(--light-brown);
+}
+
 main {
   overflow: hidden;
   width: 100%;
   height: 100%;
   max-width: 2000px;
   margin: 0 auto;
-  border: 1px solid violet;
   box-sizing: border-box;
 }
 @media screen and (min-width: 1000px) {
@@ -25,13 +28,15 @@ main {
 main section {
   width: 100%;
   height: 100%;
+  background: var(--middle-brown);
 }
 main section ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 1px solid black;
-  background: var(--light-brown);
+  width: 100%;
+  background: var(--red-brown);
 }
 main section ul li {
   width: 100%;
@@ -41,14 +46,16 @@ main section ul li {
 }
 main section ul li img {
   width: 100%;
+  border-radius: 7px;
 }
 main section ul li:nth-child(1) {
   border-left: none;
 }
 main section ul li:nth-child(2) {
   font-weight: 700;
-  font-size: 2em;
+  font-size: 1.5em;
   text-align: center;
+  text-overflow: inherit;
   padding: 10px;
 }
 main section ul li:nth-child(2)::before {
@@ -56,9 +63,29 @@ main section ul li:nth-child(2)::before {
 }
 main section ul li:nth-child(3) {
   content: "";
-  padding: 20px;
-  font-size: 1em;
-  font-weight: 600;
+  padding: 10px;
+  font-size: 0.8em;
+  font-weight: 700;
   text-align: center;
   text-decoration: underline double red;
+  background: orange;
+  border-radius: 20px;
+  color: #eee;
+}
+main section ol {
+  display: flex;
+  justify-content: space-evenly;
+}
+main section ol li {
+  width: 20%;
+  margin: 3px 5px;
+  text-align: center;
+}
+main section ol li h3 {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+main section ol li i {
+  font-size: 1.2em;
+  color: var(--sub-brown);
 }/*# sourceMappingURL=canvas.css.map */
