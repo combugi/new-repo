@@ -1,5 +1,5 @@
-body{
-  background:var(--light-brown);
+body {
+  background: beige;
 }
 main {
   overflow: hidden;
@@ -9,13 +9,14 @@ main {
   margin: 0 auto;
   box-sizing: border-box;
   @media screen and (min-width: 1000px) {
-    width: 35%;
+    width: 25%;
   }
   @media screen and (min-width: 700px) and (max-width: 1000px) {
-    width: 55%;
+    width: 75%;
   }
   @media screen and (max-width: 700px) {
     width: 100%;
+    
   }
 
   section {
@@ -23,7 +24,7 @@ main {
     height: 100%;
     background: var(--middle-brown);
 
-    ul {
+    .introduce {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -32,48 +33,57 @@ main {
       background: var(--red-brown);
 
       li {
+        display: block;
         width: 100%;
         text-align: center;
         text-transform: uppercase;
         margin: 3px 5px;
-
         img {
           width: 100%;
           border-radius: 7px;
-          
         }
-
         &:nth-child(1) {
           border-left: none;
-         
-        }
-        &:nth-child(2) {
-          font-weight: 700;
-          font-size: 1.5em;
-          text-align: center;
-          text-overflow: inherit;
-          padding: 10px;
-          &::before {
-            margin-top: 20%;
-          }
-        }
-        &:nth-child(3) {
-          content: "";
-          padding: 10px;
-          font-size: 0.8em;
-          font-weight: 700;
-          text-align: center;
-          text-decoration: underline double red;
-          background: orange;
-          border-radius: 20px;
-          color: #eee;
-
         }
       } // ul li
+      li { 
+        dl {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          margin: 3px 20px;
+          width: 100%;
+
+          dt,
+          dd {
+            display: inline-block;
+            margin: 2px 10px;
+
+            font-size: 1.1em;
+            border-bottom: 1px solid beige;
+            @media screen and (min-width: 500px) {
+              dt {
+                width: 25%;
+              }
+              dd {
+                width: 75%;
+              }
+            }
+          }
+          dt {
+            width: 40%;
+            color: orange;
+          }
+          dd {
+            color: beige;
+          }
+        }
+      }//문법상 li 추가
     } //ul
-    ol {
+    > ul {
       display: flex;
       justify-content: space-evenly;
+      background-color: var(--middle-brown);
 
       li {
         width: 20%;
@@ -83,12 +93,34 @@ main {
         h3 {
           font-size: 1.5em;
           font-weight: 500;
-          
         }
-       
+
         i {
           font-size: 1.2em;
-          color: var(--sub-brown)
+
+          color: var(--sub-brown);
+        }
+      }
+    }//ul
+    div{
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      box-shadow: 0 0 10px rgba(#000, 0.7);
+      margin-bottom: 50%;
+      padding: 50px;
+      
+      
+      p{
+        font-size: 1.5em;
+        font-weight: 700;
+        line-height: 50px;
+        padding: 20px;
+        @media screen and (max-width:1000px) {
+         height: 100%;
+        }
+        strong{
+          color: orange;
         }
       }
     }
