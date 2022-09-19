@@ -105,21 +105,26 @@ main section div {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
   margin-bottom: 50%;
-  padding: 50px;
+  padding: 30px;
 }
 main section div p {
-  font-size: 1.5em;
+  border: 1px dotted black;
+  font-size: 1.2em;
   font-weight: 700;
-  line-height: 50px;
-  padding: 20px;
-}
-@media screen and (max-width: 1000px) {
-  main section div p {
-    height: 100%;
-  }
+  line-height: 20px;
+  padding: 10px;
 }
 main section div p strong {
   color: orange;
+}
+main section div p q {
+  display: block;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 1.1em;
+  background: linear-gradient(var(--middle-brown), var(--light-brown));
+}
+main section div p q:hover {
+  color: rgba(3, 3, 66, 0.705);
 }/*# sourceMappingURL=canvas.css.map */
